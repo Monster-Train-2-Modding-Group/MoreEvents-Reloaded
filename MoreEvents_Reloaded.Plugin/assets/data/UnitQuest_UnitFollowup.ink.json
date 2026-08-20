@@ -1,0 +1,37 @@
+﻿{
+  "inkVersion": 19,
+  "root": [
+    [
+      [
+        "done",
+        { "#n": "g-0" }
+      ],
+      null
+    ],
+    "done",
+    {
+      "UnitQuest_UnitFollowup": [
+        [
+          "^<style=\"Body\"><color=\"red\">Heph</color> approaches the train, a <shake>shivering</shake> behemoth of fur.",
+          "\n",
+          "^“What'd I say, huh? The old man's still got it! Looks like that thing multiplied more than a Morsel in an empty mine.”",
+          "\n",
+          "^“So here, just as promised.”</style>",
+          "\n",
+          "ev",
+          "str",
+          "^AcceptUnit",
+          "/str",
+          "/ev",
+          {
+            "*": ".^.c-0",
+            "flg": 4
+          },
+          { "c-0": [ "\n", "^>>>GIVE_REWARD: @SplitterBoostReward_Unit", "\n", "end", null ] }
+        ],
+        null
+      ]
+    }
+  ],
+  "listDefs": {}
+}

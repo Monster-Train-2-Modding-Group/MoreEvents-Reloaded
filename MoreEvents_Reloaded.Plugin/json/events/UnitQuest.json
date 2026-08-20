@@ -1,0 +1,224 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "events": [
+    {
+      "id": "UnitQuest",
+      "knot_name": "UnitQuest",
+      "num_runs_completed_to_see": 7,
+      "priority_ticket_count": 25,
+      "num_classes_needed_to_show": 1,
+      "min_distance_allowed": 3,
+      "max_distance_allowed": 3,
+      "story_data": "assets/data/UnitQuest.ink.json",
+      "is_followup_event": false,
+      "prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_AbandonedTrainyard.prefab",
+        "asset_guid": "39ea0f9b15258a34ebb4e43ae508a264"
+      },
+      "texts": [
+        {
+          "english": "<style=\"Prompt\">“So, uh, do you want one of these?”</style>",
+          "french": "<style=\"Prompt\">\"Vous en voulez une, du coup ?\"</style>",
+          "german": "<style=\"Prompt\">„Also … willst du eins der Relikte haben?“</style>",
+          "russian": "<style=\"Prompt\">«Итак, вас что-нибудь из этого заинтересовало?»</style>",
+          "portuguese": "<style=\"Prompt\">“Então, vai querer um?”</style>",
+          "chinese": "<style=\"Prompt\">“所以，呃，你打算要哪个？”</style>"
+        },
+        {
+          "english": "<style=\"Body\">“Understood. Cramped train and all...”",
+          "french": "<style=\"Body\">\"Je comprends. Vous devez manquer de place...\"",
+          "german": "<style=\"Body\">„Verstehe. Voller Zug und so …“",
+          "russian": "<style=\"Body\">«Понимаю. В поезде мало места, и все такое...»",
+          "portuguese": "<style=\"Body\">“Entendi. Trem lotado e tal...”",
+          "chinese": "<style=\"Body\">“我明白了，车里太挤了，没地方...”"
+        },
+        {
+          "english": "“Errr, right. Well, I've found something of use - a couple of relics left behind by my father. I wasn't sure when you'd come by the <style=\"Keyword\">Forge</style>, so I trekked out into this <smallcaps><b><shake>damned cold</shake></b></smallcaps> to find you. I don't have room for them both, but I figure you may have need for one. <i>Hell, I might even be able to upgrade it later if it suits you.</i>”",
+          "french": "\"Bon, alors. J'ai trouvé quelque chose qui pourrait vous être utile. Deux reliques laissées par mon père. Comme je ne savais pas quand vous passeriez à la <style=\"Keyword\">forge</style>, je me suis aventurée dans ce <smallcaps><b><shake>satané froid</shake></b></smallcaps> pour vous retrouver. Je n'ai pas la place pour les deux, mais j'ai pensé que vous en voudriez une. <i>Je pourrai peut-être même l'améliorer plus tard, si ça vous dit.</i>\"",
+          "german": "„Äh … ja. Ich habe etwas Nützliches gefunden – einige Relikte, die mein Vater hinterlassen hat. Ich war nicht sicher, wann du in der <style=\"Keyword\">Schmiede</style> auftauchen würdest, daher habe ich mich in diese <smallcaps><b><shake>verdammte Kälte</shake></b></smallcaps> aufgemacht, um dich zu finden. Ich habe nicht genug Platz für beide, aber du könntest bestimmt eins brauchen. <i>Verdammt, ich könnte es später vielleicht sogar verbessern, wenn du willst.</i>“",
+          "russian": "«Да, точно... Я тут нашла кое-что полезное. Пару реликвий, принадлежавших моему отцу. Я не знала, когда вы решите посетить <style=\"Keyword\">Кузню</style>, поэтому блуждала в этом <smallcaps><b><shake>проклятом холоде</shake></b></smallcaps>, пытаясь отыскать вас. У меня недостаточно места, чтобы хранить обе реликвии, и я подумала, что одна из них может вам пригодиться. <i>И, во имя Ада, если сочтете ее полезной, я потом могу ее даже улучшить</i>».",
+          "portuguese": "“Uhhh, certo. Bem, encontrei algo útil: alguns artefatos que meu pai deixou. Não tinha certeza de quando você passaria pela <style=\"Keyword\">Forja</style> de novo, então me virei nesse <smallcaps><b><shake>frio do cacete</shake></b></smallcaps> para te encontrar. Não tenho onde colocar os dois, mas imagino que um deles pode lhe ser útil. <i>Pô, talvez eu até consiga aprimorar o que você escolher mais tarde, se te servir bem.</i>“",
+          "chinese": "“呃，对了，言归正传。我发现了一些有用的东西，是我父亲留下来的一些遗物。我不太确定你什么时候才能抽空来一趟<style=\"Keyword\">锻炉</style>，所以我才在<smallcaps><b><shake>这该死的大冷天</shake></b></smallcaps>里长途跋涉来找你。我没地方把这两个东西都存下，但我觉得，你可能会需要其中一个。<i>老天，如果你喜欢的话，我过些日子说不定还能帮你把它升级呢。</i>”"
+        },
+        {
+          "english": "<style=\"Body\">Heph hands over the strange machine.",
+          "french": "<style=\"Body\">Heph vous tend l'étrange machine.",
+          "german": "<style=\"Body\">Heph gibt dir die seltsame Maschine.",
+          "russian": "<style=\"Body\">Геф передает вам странное устройство.",
+          "portuguese": "<style=\"Body\">Heph entrega a máquina estranha.",
+          "chinese": "<style=\"Body\">赫芙把古怪的机器递给了你。"
+        },
+        {
+          "english": "“Odd thing that invention. But if my old man made it, it's sure to work better than any junk you'd get from the Crucible.”",
+          "french": "\"Drôle de truc, cette invention. Mais si mon paternel l'a fabriquée, ça marchera forcément mieux que la camelote du creuset.\"",
+          "german": "„Das ist eine wirklich komische Erfindung. Aber wenn mein alter Herr sie gemacht hat, dann wird sie sicher besser funktionieren als all der Schrott, den du im Schmelztiegel finden würdest.“",
+          "russian": "«Подозрительное, конечно, изобретение. Но раз его смастерил мой старик, значит, оно будет работать куда лучше, чем все то, что можно найти в Горниле».",
+          "portuguese": "“Essa aí é uma invenção esquisita. Mas foi meu pai que fez, então com certeza funciona melhor que qualquer lixo do Crisol.”",
+          "chinese": "“这东西虽然看起来怪，但只要是我们家老爷子造的，就会比你在熔炉之地找到的任何垃圾都好用。”"
+        },
+        {
+          "english": "And just like that, Heph heads back out into the cold, cursing it under her breath. But loudly enough that you know she wants you to feel guilty...</style>",
+          "french": "Et sur ces paroles, Heph ressort dans le froid en jurant dans sa barbe, mais suffisamment fort pour que vous compreniez qu'elle vous en veut...</style>",
+          "german": "Heph dreht sich ruckartig um und geht leise fluchend zurück in die Kälte. Ihre Verwünschungen sind gerade laut genug, dass du sie hören kannst. Offenbar möchte sie, dass du dich schuldig fühlst …</style>",
+          "russian": "Геф стремительно отворачивается от вас и скрывается в морозной мгле, что-то бормоча себе под нос. Бормоча достаточно громко, чтобы вы поняли, что она пытается вас пристыдить...</style>",
+          "portuguese": "E então Heph vai embora e volta a enfrentar o frio congelante, xingando para si, mas alto o suficiente para você poder escutar, tentando fazer você se sentir culpado...</style>",
+          "chinese": "就这样，赫芙又转身走近了寒风之中。她低声地咒骂着，但音量足以让你听到。你明白，她想让你心怀愧疚…</style>"
+        },
+        {
+          "english": "<style=\"Body\"><color=\"red\">Heph the Blacksmith</color> huddles near the train. She is clearly unaccustomed to the <shake>cold</shake>.",
+          "french": "<style=\"Body\"><color=\"red\">Heph la forgeronne</color> vient se blottir contre le train. Elle n'est visiblement pas habituée au <shake>froid</shake>.",
+          "german": "<style=\"Body\"><color=\"red\">Heph die Schmiedin</color> kauert in der Nähe des Zuges. Sie ist offenbar nicht an die <shake>Kälte</shake> gewöhnt.",
+          "russian": "<style=\"Body\">Рядом с поездом суетится <color=\"red\">кузнец Геф</color>. Она явно не привыкла к <shake>холоду</shake>.",
+          "portuguese": "<style=\"Body\"><color=\"red\">Heph, a ferreira</color>, aproxima-se do trem. Ela claramente não está acostumada com o <shake>frio</shake>.",
+          "chinese": "<style=\"Body\"><color=\"red\">铁匠赫芙</color>蜷缩在火车附近。很显然，她并不习惯于<shake>寒冷</shake>。"
+        },
+        {
+          "english": "“Careful with that. It looks ancient, but my old man made sure it would work for a good while.”",
+          "french": "\"Faites attention. Il n'est plus tout jeune, mais mon paternel a fait en sorte qu'il dure longtemps.\"",
+          "german": "„Sei vorsichtig. Er mag sehr alt aussehen, aber mein alter Herr hat dafür gesorgt, dass er ziemlich haltbar ist.“",
+          "russian": "«Будьте осторожны с этим. Пусть штуковина и выглядит древней, но мой старик смастерил ее на века».",
+          "portuguese": "“Cuida bem disso. É meio velho, mas meu pai garantiu que funcionaria por um bom tempo.”",
+          "chinese": "“小心点。虽然这东西看着很旧，但我们家老爷子保证，它能发挥好一阵子的作用呢。”"
+        },
+        {
+          "english": "<style=\"Body\">Heph gives a nod of approval as she hands over the <style=\"Keyword\">Railspike</style>.",
+          "french": "<style=\"Body\">Heph hoche la tête avec approbation en vous tendant le <style=\"Keyword\">crampon</style>.",
+          "german": "<style=\"Body\">Heph nickt zustimmend, als sie den <style=\"Keyword\">Schienennagel</style> überreicht.",
+          "russian": "<style=\"Body\">Геф одобрительно кивает, протягивая вам <style=\"Keyword\">путевой костыль</style>.",
+          "portuguese": "<style=\"Body\">Heph parece estar satisfeita enquanto entrega o <style=\"Keyword\">Prego de Trilho</style>.",
+          "chinese": "<style=\"Body\">赫芙带着赞许的表情点点头，把<style=\"Keyword\">铁道道钉</style>递给了你。"
+        },
+        {
+          "english": "“And if you can get a few more of 'em - <b>4 or more will do</b> - I'll make it worth your while.”</style>",
+          "french": "\"Et si vous en trouvez d'autres, revenez me voir, vous ne le regretterez pas. <b>Quatre devraient faire l'affaire</b>.\"</style>",
+          "german": "„Und falls du noch ein paar mehr finden kannst – <b>4 mehr wären genug</b> – dann werde ich dich reichlich für deine Mühen belohnen.“</style>",
+          "russian": "«А если найдете еще несколько таких же - <b>хотя бы четыре</b> - возвращайтесь ко мне и не пожалеете».</style>",
+          "portuguese": "“E se você conseguir mais deles, <b>4 ou mais deve dar</b>, farei valer a pena.”</style>",
+          "chinese": "“另外，如果你能弄到更多这种东西的话，<b>至少 4 个也就差不多够了</b>，我会让你物有所值的。”</style>"
+        },
+        {
+          "english": "“I trust the <style=\"Keyword\">Rail</style> has been smooth. Well, as smooth as it can be in times like these...”",
+          "french": "\"J'espère que la <style=\"Keyword\">Voie</style> a été clémente avec vous. Enfin, autant que possible en des temps pareils...\"",
+          "german": "„Hoffentlich hattest du bisher ruhige <style=\"Keyword\">Gleise</style>. Na ja, jedenfalls so ruhig wie sie in solchen Zeiten sein können …“",
+          "russian": "«Надеюсь, <style=\"Keyword\">рельсы</style> под вашими колесами были ровными. Настолько ровными, насколько это возможно при текущих обстоятельствах...»",
+          "portuguese": "“Imagino que os <style=\"Keyword\">Trilhos</style> andam bem. Digo, tão bem quanto possível em horas como essa...”",
+          "chinese": "“我相信<style=\"Keyword\">铁道</style>一直很顺畅。唔，在这样的年代，这已经算是顺畅了...”"
+        }
+      ],
+      "followup_events": [
+        {
+          "event": "@UnitQuest_UnitFollowup",
+          "conditions": [
+            {
+              "name": "FollowupConditionCardCount",
+              "param_int": 4,
+              "param_card": "@SpikedriverColony"
+            }
+          ]
+        },
+        {
+          "event": "@UnitQuest_SpellFollowup",
+          "conditions": [
+            {
+              "name": "FollowupConditionCardCount",
+              "param_int": 4,
+              "param_card": "@AutomaticRailspikes"
+            }
+          ]
+        }
+      ],
+      "choice_texts": [
+        {
+          "choice": "Spell",
+          "texts": {
+            "english": "Take the Railspike.",
+            "french": "Prendre le crampon.",
+            "german": "Ich nehme den Schienennagel.",
+            "russian": "Забрать путевой костыль.",
+            "portuguese": "Pegar o Prego de Trilho.",
+            "chinese": "收下铁道道钉。"
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.",
+            "french": "Obtenez {0}.",
+            "german": "Belohnung: {0}.",
+            "russian": "Получите: «{0}».",
+            "portuguese": "Receba {0}.",
+            "chinese": "获得{0}。",
+            "spanish": "Obtienes {0}.",
+            "chinese_traditional": "獲得{0}。",
+            "korean": "{0}를 획득합니다.",
+            "japanese": "{0}を得る。"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "card",
+              "references": [
+                "@AutomaticRailspikes"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "Unit",
+          "texts": {
+            "english": "Take the Raildriver.",
+            "french": "Prendre le mandrin.",
+            "german": "Ich nehme den Nageltreiber.",
+            "russian": "Забрать патрон.",
+            "portuguese": "Pegar o Condutor do Trilho.",
+            "chinese": "收下铁道驱动器。"
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.",
+            "french": "Obtenez {0}.",
+            "german": "Belohnung: {0}.",
+            "russian": "Получите: «{0}».",
+            "portuguese": "Receba {0}.",
+            "chinese": "获得{0}。",
+            "spanish": "Obtienes {0}.",
+            "chinese_traditional": "獲得{0}。",
+            "korean": "{0}를 획득합니다.",
+            "japanese": "{0}を得る。"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "card",
+              "references": [
+                "@SpikedriverColony"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "ReplicatingSpellReward",
+      "type": "card",
+      "costs": [ 100 ],
+      "is_story_reward": true,
+      "extensions": [
+        {
+          "card": {
+            "card": "@AutomaticRailspikes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ReplicatingExtinguishUnitReward",
+      "type": "card",
+      "costs": [ 100 ],
+      "is_story_reward": true,
+      "extensions": [
+        {
+          "card": {
+            "card": "@SpikedriverColony"
+          }
+        }
+      ]
+    }
+  ]
+}

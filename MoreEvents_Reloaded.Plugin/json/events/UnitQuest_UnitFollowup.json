@@ -1,0 +1,148 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "events": [
+    {
+      "id": "UnitQuest_UnitFollowup",
+      "knot_name": "UnitQuest_UnitFollowup",
+      "priority_ticket_count": 0,
+      "min_distance_allowed": 3,
+      "max_distance_allowed": 8,
+      "story_data": "assets/data/UnitQuest_UnitFollowup.ink.json",
+      "is_followup_event": true,
+      "prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_AbandonedTrainyard.prefab",
+        "asset_guid": "39ea0f9b15258a34ebb4e43ae508a264"
+      },
+      "texts": [
+        {
+          "english": "“What'd I say, huh? The old man's still got it! Looks like that thing multiplied more than a Morsel in an empty mine.”",
+          "french": "\"Alors ? Pas mal, hein ? Le paternel n'a pas perdu la main ! Ce truc a fait plus de petits qu'un sous-bistre dans une mine déserte.\"",
+          "german": "„Na, was habe ich gesagt? Mein Alter hat es immer noch drauf! Sieht aus, als hätte sich das Ding stärker vermehrt als ein Klops in einer verlassenen Mine.“",
+          "russian": "«Ну, что я говорила? Старик по-прежнему крут! Похоже, эта штука размножилась даже сильнее, чем заморыши в заброшенной шахте».",
+          "portuguese": "“O que foi que eu disse? O velhote sabe o que faz! Isso aí parece ter se multiplicado mais do que Lancho em mina vazia.”",
+          "chinese": "“我说什么来着，哈？老爷子的话就是有道理！看起来，这东西在空矿山里比影裔还能产崽。”"
+        }
+      ],
+      "choice_texts": [
+        {
+          "choice": "AcceptUnit",
+          "texts": {
+            "english": "Accept your reward.",
+            "french": "Accepter votre récompense.",
+            "german": "Belohnung annehmen.",
+            "russian": "Забрать награду.",
+            "portuguese": "Aceitar sua recompensa.",
+            "chinese": "接受你的报酬。"
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.",
+            "french": "Obtenez {0}.",
+            "german": "Belohnung: {0}.",
+            "russian": "Получите: «{0}».",
+            "portuguese": "Receba {0}.",
+            "chinese": "获得{0}。",
+            "spanish": "Obtienes {0}.",
+            "chinese_traditional": "獲得{0}。",
+            "korean": "{0}를 획득합니다.",
+            "japanese": "{0}を得る。"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@UpgradeReplicatorsAnnhilate"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "SplitterBoostReward_Unit",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "costs": [
+        100
+      ],
+      "collect_cue": "Collect_CardRare",
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@UpgradeReplicatorsAnnhilate"
+          }
+        }
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "UpgradeReplicatorsAnnhilate",
+      "type": "enhancer",
+      "names": {
+        "english": "Improved Spikedriver",
+        "french": "Plante-crampons amélioré",
+        "german": "Verbesserter Nageltreiber",
+        "russian": "Улучшенный костыльщик",
+        "portuguese": "Colônia Aperfeiçoada",
+        "chinese": "强化钉锤"
+      },
+      "descriptions": {
+        "english": "Upgrade all copies of <b>Spikedriver Colony</b> with +[effect0.upgrade.bonusdamage][attack].",
+        "french": "Améliore toutes les cartes <b>Colonie de plante-crampons</b> avec +[effect0.upgrade.bonusdamage][attack].",
+        "german": "Verbessere alle Kopien der <b>Nageltreiber-Kolonie</b> mit +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Улучшает все копии <b>Колонии костыльщиков</b> на +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Aprimora todas as cópias de <b>Colônia Perfurante</b> com +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级所有<b>钉锤大队</b>的复制品，使其获得 +[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "icon": "@ImprovedMachine",
+      "relic_effects": [ "@UpgradeSpikedrivers" ],
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "UpgradeSpikedrivers",
+      "name": "RelicEffectUpgradeMatchingCards",
+      "param_card_type": "monster",
+      "param_upgrade": "@ReplicateOnDeath_Upgrade",
+      "param_card_pool": "@SpikedriverColonyPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ReplicateOnDeath_Upgrade",
+      "titles": {
+        "english": "Improved Spikedriver",
+        "french": "Plante-crampons amélioré",
+        "german": "Verbesserter Nageltreiber",
+        "russian": "Улучшенный костыльщик",
+        "portuguese": "Colônia Aperfeiçoada",
+        "chinese": "强化钉锤"
+      },
+      "descriptions": {
+        "english": "+[bonusdamage][attack].",
+        "french": "+[bonusdamage][attack].",
+        "german": "+[bonusdamage][attack].",
+        "russian": "+[bonusdamage][attack].",
+        "portuguese": "+[bonusdamage] de [attack].",
+        "chinese": "+[bonusdamage][attack]。"
+      },
+      "bonus_damage": 20,
+      "remove_upgrades": [ "@SpikerdriverColonyReplicate" ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ImprovedMachine",
+      "path": "assets/textures/ImprovedMachine.png"
+    }
+  ]
+}

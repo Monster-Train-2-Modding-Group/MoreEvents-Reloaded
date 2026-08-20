@@ -1,0 +1,165 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "events": [
+    {
+      "id": "UnitQuest_SpellFollowup",
+      "knot_name": "UnitQuest_SpellFollowup",
+      "priority_ticket_count": 0,
+      "min_distance_allowed": 3,
+      "max_distance_allowed": 8,
+      "story_data": "assets/data/UnitQuest_SpellFollowup.ink.json",
+      "is_followup_event": true,
+      "prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_AbandonedTrainyard.prefab",
+        "asset_guid": "39ea0f9b15258a34ebb4e43ae508a264"
+      },
+      "texts": [
+        {
+          "english": "“So here, just as promised.”</style>",
+          "french": "\"Alors voilà, comme promis.\"</style>",
+          "german": "„Hier, wie versprochen.“</style>",
+          "russian": "«Держите. Все как и обещала».</style>",
+          "portuguese": "“Aqui, como prometido.”</style>",
+          "chinese": "“来，这是我答应你的报酬。”</style>"
+        },
+        {
+          "english": "“It's cold enough to freeze a Waxer's wick off out here. I don't know how you stand it. Regardless, it seems like the <style=\"Keyword\">Railspike</style> didn't disappoint, huh?”",
+          "french": "\"Il fait un froid à geler la mèche d'un cireux. Je ne sais pas comment vous supportez ça. Enfin, on dirait que le <style=\"Keyword\">crampon</style> a fait ses preuves, hein ?\"",
+          "german": "Da draußen ist es kalt genug, um einem Wachser den Docht abzufrieren. Ich verstehe nicht, wie du das aushältst. Aber egal. Der <style=\"Keyword\">Schienennagel</style> hat ja scheinbar deine Erwartungen erfüllt, nicht wahr?“",
+          "russian": "«Тут так холодно, что может застыть фитиль у восковара. Не понимаю, как вы переносите такой мороз. Но, как бы то ни было, <style=\"Keyword\">путевой костыль</style> вас не разочаровал, верно?»",
+          "portuguese": "“Tá tão frio aqui que congelaria até o pavio de um Céreo. Não sei como você aguenta. Enfim, o <style=\"Keyword\">Prego de Trilho</style> não desapontou, hein?”",
+          "chinese": "“这里真是太冷了，连烛人的烛芯都能冻掉，我真不知道你怎么能受得了。废话不说了，看来<style=\"Keyword\">铁道道钉</style>没让你失望，是吧？”"
+        },
+        {
+          "english": "<style=\"Body\"><color=\"red\">Heph</color> approaches the train, a <shake>shivering</shake> behemoth of fur.",
+          "french": "<style=\"Body\">La colossale <color=\"red\">Heph</color> s'approche du train en <shake>frissonnant</shake>.",
+          "german": "<style=\"Body\"><color=\"red\">Heph</color> nähert sich einem <shake>zitternden</shake> Fellkoloss von einem Zug.",
+          "russian": "<style=\"Body\">К поезду приближается <color=\"red\">Геф</color>, <shake>дрожащая</shake> и кутающаяся в мех.",
+          "portuguese": "<style=\"Body\"><color=\"red\">Heph</color> se aproxima do trem, uma titã peluda <shake>tremendo de frio</shake>.",
+          "chinese": "<style=\"Body\"><color=\"red\">赫芙</color>靠近了火车，像个<shake>浑身发抖</shake>的大毛球一样。"
+        }
+      ],
+      "choice_texts": [
+        {
+          "choice": "AcceptSpell",
+          "texts": {
+            "english": "Accept your reward.",
+            "french": "Accepter votre récompense.",
+            "german": "Belohnung annehmen.",
+            "russian": "Забрать награду.",
+            "portuguese": "Aceitar sua recompensa.",
+            "chinese": "接受你的报酬。"
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.",
+            "french": "Obtenez {0}.",
+            "german": "Belohnung: {0}.",
+            "russian": "Получите: «{0}».",
+            "portuguese": "Receba {0}.",
+            "chinese": "获得{0}。",
+            "spanish": "Obtienes {0}.",
+            "chinese_traditional": "獲得{0}。",
+            "korean": "{0}를 획득합니다.",
+            "japanese": "{0}を得る。"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@UpgradeRailspikeAnnhilate"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "SplitterBoostReward_Spell",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "costs": [
+        100
+      ],
+      "collect_cue": "Collect_CardRare",
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@UpgradeRailspikeAnnhilate"
+          }
+        }
+      ]
+    }
+  ],
+  "relics": [
+    {
+      "id": "UpgradeRailspikeAnnhilate",
+      "type": "enhancer",
+      "names": {
+        "english": "Improved Railspike",
+        "french": "Crampon amélioré",
+        "german": "Verbesserter Schienennagel",
+        "russian": "Улучшенный костыль",
+        "portuguese": "Prego de Trilho Aperfeiçoado",
+        "chinese": "强化道钉"
+      },
+      "descriptions": {
+        "english": "Upgrade all copies of <b>Automatic Railspikes</b> with +[effect0.upgrade.bonusdamage] [magicpower] and [consume].",
+        "french": "Améliore toutes les cartes <b>Crampons automatiques</b> avec +[effect0.upgrade.bonusdamage] <nobr><b>Puissance magique</b></nobr> et <b>Destruction</b>.",
+        "german": "Verbessere alle Kopien der <b>Automatischen Schienennägel</b> mit +[effect0.upgrade.bonusdamage] <nobr><b>magische Kraft</b></nobr> und <b>Verbrauch</b>.",
+        "russian": "Улучшает все копии <b>Автоматических костылей</b>, добавляя +[effect0.upgrade.bonusdamage] к <nobr><b>силе магии</b></nobr> и <b>поглощение</b>.",
+        "portuguese": "Aprimora todas as cópias de <b>Pregos de Trilho Automatizados</b> com +[effect0.upgrade.bonusdamage] de <nobr><b>Poder Mágico</b></nobr> e <b>Consumir</b>.",
+        "chinese": "升级所有<b>自动道钉</b>的复制品，使其获得 +[effect0.upgrade.bonusdamage] <nobr><b>魔法强度</b></nobr>与<b>消耗</b>效果。"
+      },
+      "icon": "@ImprovedMachine",
+      "relic_effects": [ "@UpgradeRailspikes" ],
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "UpgradeRailspikes",
+      "name": "RelicEffectUpgradeMatchingCards",
+      "param_card_type": "monster",
+      "param_upgrade": "@ReplicateOnSlay_Upgrade",
+      "param_card_pool": "@AutomaticRailspikesPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ReplicateOnSlay_Upgrade",
+      "titles": {
+        "english": "Improved Railspike",
+        "french": "Crampon amélioré",
+        "german": "Verbesserter Schienennagel",
+        "russian": "Улучшенный костыль",
+        "portuguese": "Prego de Trilho Aperfeiçoado",
+        "chinese": "强化道钉"
+      },
+      "descriptions": {
+        "english": "+[bonusdamage] [magicpower] and [consume].",
+        "french": "+[bonusdamage] <nobr><b>Puissance magique</b></nobr> et <b>Destruction</b>.",
+        "german": "+[bonusdamage] <nobr><b>magische Kraft</b></nobr> und <b>Verbrauch</b>.",
+        "russian": "+[bonusdamage] к <nobr><b>силе магии</b></nobr> и <b>поглощение</b>.",
+        "portuguese": "+[bonusdamage] <nobr><b>Poder Mágico</b></nobr> e <b>Consumir</b>.",
+        "chinese": "+[bonusdamage] <nobr><b>魔法强度</b></nobr>，获得<b>消耗</b>。"
+      },
+      "bonus_damage": 10,
+      "trait_upgrades": [ "@Consume" ],
+      "remove_upgrades": [ "@AutomaticRailspikesReplicate" ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "Consume",
+      "name": "CardTraitExhaustState"
+    }
+  ]
+}

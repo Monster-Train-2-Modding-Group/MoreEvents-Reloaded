@@ -1,0 +1,233 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "AutomaticRailspikes",
+      "names": {
+        "english": "Automatic Railspikes",
+        "french": "Crampons automatiques",
+        "german": "Automatische Schienennägel",
+        "russian": "Автоматические костыли",
+        "portuguese": "Pregos de Trilho Automatizados",
+        "chinese": "自动道钉",
+        "spanish": "Clavos de vía automáticos",
+        "chinese_traditional": "自動道釘",
+        "korean": "자동 레일 스파이크",
+        "japanese": "自動レールスパイク"
+      },
+      "descriptions": {
+        "english": "Deal [trait0.power][x] damage.",
+        "french": "Inflige [trait0.power][x] les dégâts à une unité.",
+        "german": "Füge einer Einheit [trait0.power][x] Schaden zu.",
+        "russian": "Наносит [x][trait0.power] урона всем бойцам.",
+        "portuguese": "Causa [trait0.power][x] de dano a uma unidade.",
+        "chinese": "对一个单位造成 [trait0.power][x] 点伤害",
+        "spanish": "Inflige [trait0.power][x] de daño a una unidad enemiga.",
+        "chinese_traditional": "對一個單位造成[trait0.power][x]點傷害。",
+        "korean": "한 유닛에게 [trait0.power][x]의 피해를 입힙니다.",
+        "japanese": "ユニット1体に[trait0.power][x]のダメージを与える。"
+      },
+      "cost": 0,
+      "cost_type": "x",
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "targets_room": true,
+      "targetless": false,
+      "traits": [ "@AutomaticRailspikesScaleOnCost" ],
+      "effects": [ "@AutomaticRailspikesDamage" ],
+      "card_art": "@AutomaticRailspikesCardArt",
+      "initial_upgrades": [
+        "@AutomaticRailspikesReplicate"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "AutomaticRailspikesScaleOnCost",
+      "name": "CardTraitScalingAddDamage",
+      "param_tracked_value": "played_cost",
+      "param_int": 25,
+      "param_use_scaling_params": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AutomaticRailspikesReplicate",
+      "card_trigger_upgrades": [ "@SlayPermanentCopy" ]
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "SlayPermanentCopy",
+      "trigger": "on_kill",
+      "descriptions": {
+        "english": "Add a permanent copy of this card to your discard pile.",
+        "french": "Ajoute une copie permanente de cette carte à votre défausse.",
+        "german": "Füge deinem Ablagestapel eine bleibende Kopie dieser Karte hinzu.",
+        "russian": "Добавляет постоянную копию этой карты в ваш сброс.",
+        "portuguese": "Adiciona uma cópia permanente desta carta à sua pilha de descarte.",
+        "chinese": "将这张卡牌的永久性复制品加入弃牌堆。"
+      },
+      "effects": [ "@AutomaticRailspikesAddPermanentCopyToDiscard" ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AutomaticRailspikesDamage",
+      "name": "CardEffectDamage",
+      "target_team": "both",
+      "target_mode": "drop_target_character",
+      "param_int": 0
+    },
+    {
+      "id": "AutomaticRailspikesAddPermanentCopyToDiscard",
+      "name": "CardEffectAddRunCard",
+      "copy_modifiers_from_source": true,
+      "param_int": 1,
+      "hide_tooltip": true,
+      "param_card_pool": "@AutomaticRailspikesPool"
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "AutomaticRailspikesPool",
+      "cards": [ "@AutomaticRailspikes" ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "AutomaticRailspikesCardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "base_layer": {
+            "type": "texture",
+            "texture": "@SPL_AutomatedRailspikes_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "@FX_Aura",
+              "motion_texture": "@FX_Flow_Starburst",
+              "mask_texture": "@MSK_AutomatedRailspikes_01",
+              "tint": {
+                "r": 0.937254965,
+                "g": 0.8862746,
+                "b": 0.698039234,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 5.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_AutomatedRailspikes_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_AutomatedRailspikes_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_AutomatedRailspikes_04",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_AutomatedRailspikes_05",
+              "stretch": false,
+              "enabled": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Tip",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.187,
+                "y": -0.225,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Spike",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.06,
+                "y": 0.08,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Gears_01",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": 0.054,
+                "y": 0.055,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Gears_02",
+              "layers": [
+                4
+              ],
+              "position": {
+                "x": 0.054,
+                "y": 0.055,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FX_Aura",
+      "path": "assets/textures/AutomaticRailspikes/FX_Aura.png"
+    },
+    {
+      "id": "FX_Flow_Starburst",
+      "path": "assets/textures/AutomaticRailspikes/FX_Flow_Starburst.png"
+    },
+    {
+      "id": "MSK_AutomatedRailspikes_01",
+      "path": "assets/textures/AutomaticRailspikes/MSK_AutomatedRailspikes_01.png"
+    },
+    {
+      "id": "SPL_AutomatedRailspikes_01",
+      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_01.png"
+    },
+    {
+      "id": "SPL_AutomatedRailspikes_03",
+      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_03.png"
+    },
+    {
+      "id": "SPL_AutomatedRailspikes_02",
+      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_02.png"
+    },
+    {
+      "id": "SPL_AutomatedRailspikes_04",
+      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_04.png"
+    },
+    {
+      "id": "SPL_AutomatedRailspikes_05",
+      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_05.png"
+    }
+  ]
+}
