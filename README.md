@@ -8,7 +8,7 @@
 
 ![icon](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreEvents-Reloaded/main/icon.png)
 
-Mod that adds the cavern events from MT1 into MT2.
+MT2 Mod that adds the cavern events from MT1.
 
 ## Screenshots
 ![UnitQuestA](https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/MoreEvents-Reloaded/main/screenshots/UnitQuestA.jpg)
