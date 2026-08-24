@@ -82,7 +82,7 @@
       "costs": [
         100
       ],
-      "collect_cue": "Collect_CardRare",
+      "collect_sfx_cue": "Collect_CardRare",
       "extensions": [
         {
           "enhancer": {

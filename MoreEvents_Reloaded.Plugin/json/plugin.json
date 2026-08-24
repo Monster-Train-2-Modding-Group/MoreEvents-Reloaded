@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "asset_bundles": [
+    {
+      "id": "AssetBundle",
+      "paths": {
+        "windows": "assets/more_events_assetbundle.windows.bundle",
+        "linux": "assets/more_events_assetbundle.linux.bundle",
+        "macosx": "assets/more_events_assetbundle.macosx.bundle"
+      }
+    }
+  ]
+}

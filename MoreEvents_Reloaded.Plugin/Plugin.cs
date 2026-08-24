@@ -21,6 +21,7 @@ namespace MoreEvents_Reloaded.Plugin
                 c =>
                 {
                     c.AddMergedJsonFile(
+                        "json/plugin.json",
                         "json/cards/SpikedriverColony.json",
                         "json/cards/AutomaticRailspikes.json",
                         "json/events/UnitQuest.json",

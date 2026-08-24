@@ -259,89 +259,140 @@
   "audio_clips": [
     {
       "id": "SpikedriverColonyAttack",
-      "path": "assets/sounds/Attack_Babymetal.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/Attack_Babymetal.wav"
+      }
     },
     {
       "id": "SpikedriverColonySpawn",
-      "path": "assets/sounds/Spawn_Colony.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/Spawn_Colony.wav"
+      }
     },
     {
       "id": "SpikedriverColonyDeath",
-      "path": "assets/sounds/Death_Colony.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/Death_Colony.wav"
+      }
     },
     {
       "id": "SpikedriverColonyOnHit1",
-      "path": "assets/sounds/OnHit_Colony1.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/OnHit_Colony1.wav"
+      }
     },
     {
       "id": "SpikedriverColonyOnHit2",
-      "path": "assets/sounds/OnHit_Colony2.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/OnHit_Colony2.wav"
+      }
     },
     {
       "id": "SpikedriverColonyAttackPrep1",
-      "path": "assets/sounds/Prep_Colony1.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/Prep_Colony1.wav"
+      }
     },
     {
       "id": "SpikedriverColonyAttackPrep2",
-      "path": "assets/sounds/Prep_Colony2.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/Prep_Colony2.wav"
+      }
     },
     {
       "id": "SpikedriverColonyAttackPrep3",
-      "path": "assets/sounds/Prep_Colony3.wav"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Sounds/SpikedriverColony/Prep_Colony3.wav"
+      }
     }
   ],
   "skeletons": [
     {
       "id": "SpikedriverColony_Idle",
-      "atlas_path": "assets/skeletons/PLR_SpikedriverColony_Idle.atlas.txt",
-      "data_path": "assets/skeletons/PLR_SpikedriverColony_Idle.json",
-      "texture_paths": [ "assets/skeletons/PLR_SpikedriverColony_Idle.png" ]
+      "data_path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Skeletons/SpikedriverColony/Idle/PLR_SpikedriverColony_Idle_SkeletonData.asset"
+      }
     },
     {
       "id": "SpikedriverColony_HitReact",
-      "atlas_path": "assets/skeletons/PLR_SpikedriverColony_HitReact.atlas.txt",
-      "data_path": "assets/skeletons/PLR_SpikedriverColony_HitReact.json",
-      "texture_paths": [ "assets/skeletons/PLR_SpikedriverColony_HitReact.png" ]
+      "data_path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Skeletons/SpikedriverColony/HitReact/PLR_SpikedriverColony_HitReact_SkeletonData.asset"
+      }
     },
     {
       "id": "SpikedriverColony_Attack",
-      "atlas_path": "assets/skeletons/PLR_SpikedriverColony_Attack.atlas.txt",
-      "data_path": "assets/skeletons/PLR_SpikedriverColony_Attack.json",
-      "texture_paths": [ "assets/skeletons/PLR_SpikedriverColony_Attack.png" ]
+      "data_path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Skeletons/SpikedriverColony/Attack/PLR_SpikedriverColony_Attack_SkeletonData.asset"
+      }
     }
   ],
   "sprites": [
     {
       "id": "SpikedriverColony",
-      "path": "assets/textures/SpikedriverColony/PLR_SpikedriverColony.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/PLR_SpikedriverColony.png"
+      }
     },
     {
       "id": "Layer1Tex",
-      "path": "assets/textures/SpikedriverColony/Layer1Tex.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer1Tex.png"
+      }
     },
     {
       "id": "Layer2Tex",
-      "path": "assets/textures/SpikedriverColony/Layer2Tex.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer2Tex.png"
+      }
     },
     {
       "id": "Layer2Motion",
-      "path": "assets/textures/SpikedriverColony/Layer2Motion.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer2Motion.png"
+      }
     },
     {
       "id": "Layer3Tex",
-      "path": "assets/textures/SpikedriverColony/Layer3Tex.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer3Tex.png"
+      }
     },
     {
       "id": "Layer4Tex",
-      "path": "assets/textures/SpikedriverColony/Layer4Tex.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer4Tex.png"
+      }
     },
     {
       "id": "Layer4Motion",
-      "path": "assets/textures/SpikedriverColony/Layer4Motion.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer4Motion.png"
+      }
     },
     {
       "id": "Layer5Tex",
-      "path": "assets/textures/SpikedriverColony/Layer5Tex.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/SpikedriverColony/Layer5Tex.png"
+      }
     }
   ]
 }

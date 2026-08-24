@@ -199,35 +199,59 @@
   "sprites": [
     {
       "id": "FX_Aura",
-      "path": "assets/textures/AutomaticRailspikes/FX_Aura.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/FX_Aura.png"
+      }
     },
     {
       "id": "FX_Flow_Starburst",
-      "path": "assets/textures/AutomaticRailspikes/FX_Flow_Starburst.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/FX_Flow_Starburst.png"
+      }
     },
     {
       "id": "MSK_AutomatedRailspikes_01",
-      "path": "assets/textures/AutomaticRailspikes/MSK_AutomatedRailspikes_01.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/MSK_AutomatedRailspikes_01.png"
+      }
     },
     {
       "id": "SPL_AutomatedRailspikes_01",
-      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_01.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/SPL_AutomatedRailspikes_01.png"
+      }
     },
     {
       "id": "SPL_AutomatedRailspikes_03",
-      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_03.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/SPL_AutomatedRailspikes_03.png"
+      }
     },
     {
       "id": "SPL_AutomatedRailspikes_02",
-      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_02.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/SPL_AutomatedRailspikes_02.png"
+      }
     },
     {
       "id": "SPL_AutomatedRailspikes_04",
-      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_04.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/SPL_AutomatedRailspikes_04.png"
+      }
     },
     {
       "id": "SPL_AutomatedRailspikes_05",
-      "path": "assets/textures/AutomaticRailspikes/SPL_AutomatedRailspikes_05.png"
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/AutomaticRailspikes/SPL_AutomatedRailspikes_05.png"
+      }
     }
   ]
 }

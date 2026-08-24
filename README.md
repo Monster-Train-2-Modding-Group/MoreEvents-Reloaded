@@ -31,3 +31,7 @@ Once installed via mod manager or manually. Run the game once to populate the vi
 We are not responsible for any unintended behavior / damage that results from using this mod. Use responsibly.
 
 Do not play daily challenges with this mod enabled.
+
+## Final
+
+Assets are purely from Monster Train 1 developed by Shiny Shoe. Improved Machine icon recolor from Monster Train 2.
