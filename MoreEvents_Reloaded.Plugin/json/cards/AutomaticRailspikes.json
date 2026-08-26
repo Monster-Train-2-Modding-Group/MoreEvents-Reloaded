@@ -100,6 +100,7 @@
       "type": "card_art",
       "extensions": {
         "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
           "base_layer": {
             "type": "texture",
             "texture": "@SPL_AutomatedRailspikes_01"
@@ -125,7 +126,8 @@
               "type": "texture",
               "texture": "@SPL_AutomatedRailspikes_03",
               "stretch": false,
-              "additive": false
+              "additive": false,
+              "animated": true
             },
             {
               "type": "texture",
@@ -137,15 +139,288 @@
               "type": "texture",
               "texture": "@SPL_AutomatedRailspikes_04",
               "stretch": false,
-              "additive": false
+              "additive": false,
+              "animated": true
             },
             {
               "type": "texture",
               "texture": "@SPL_AutomatedRailspikes_05",
               "stretch": false,
-              "enabled": false
+              "enabled": false,
+              "animated": true
             }
           ],
+          "animation_clip": {
+            "id": "Anim_Spell_AutomatedRailspikes",
+            "sample_rate": 60,
+            "loop_time": "loop",
+            "curves": [
+              {
+                "path": "CardSprite",
+                "type": "AnimateCardEffects",
+                "attribute": "layer4.enabled",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.25,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": "Infinity"
+                  },
+                  {
+                    "time": 0.33333334,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.41666666,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": "Infinity"
+                  },
+                  {
+                    "time": 0.5,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.56666666,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.8333333,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 2,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardSprite",
+                "type": "AnimateCardEffects",
+                "attribute": "layer5.enabled",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.25,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": "Infinity"
+                  },
+                  {
+                    "time": 0.33333334,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.41666666,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": "Infinity"
+                  },
+                  {
+                    "time": 0.5,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.56666666,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.8333333,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 2,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardEffectTransforms/Tip",
+                "type": "CardEffectTransform",
+                "attribute": "position.x",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": -0.187,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.33333334,
+                    "value": -0.187,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.5,
+                    "value": -0.43,
+                    "in_tangent": 7.501442e-07,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.56666666,
+                    "value": -0.03,
+                    "in_tangent": -2.9563864e-07,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.8333333,
+                    "value": -0.187,
+                    "in_tangent": 1.4548495e-07,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 2,
+                    "value": -0.187,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardEffectTransforms/Tip",
+                "type": "CardEffectTransform",
+                "attribute": "position.y",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": -0.225,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.33333334,
+                    "value": -0.225,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.5,
+                    "value": -0.65,
+                    "in_tangent": -9.1195113e-07,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.56666666,
+                    "value": -0.02,
+                    "in_tangent": 9.3817744e-07,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.8333333,
+                    "value": -0.225,
+                    "in_tangent": 3.0249307e-08,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 2,
+                    "value": -0.225,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardSprite",
+                "type": "AnimateCardEffects",
+                "attribute": "layer2.enabled",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.33333334,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.5,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": "Infinity"
+                  },
+                  {
+                    "time": 0.51666665,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": "Infinity"
+                  },
+                  {
+                    "time": 0.56666666,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 0.8333333,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 2,
+                    "value": 1,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardEffectTransforms/Tip",
+                "type": "CardEffectTransform",
+                "attribute": "position.z",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 2,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              }
+            ]
+          },
           "transforms": [
             {
               "id": "Tip",
