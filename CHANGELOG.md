@@ -1,3 +1,6 @@
+## V0.2.0
+- Automatic Railspikes is now fully animated.
+
 ## V0.1.1
 - Mod loads 20% faster.
 - Fix warning messages.
