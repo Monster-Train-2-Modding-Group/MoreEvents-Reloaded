@@ -215,12 +215,17 @@
         "CardEffectMergeEquipment",
         "CardEffectAddTempCardUpgradeToDeckScreenChosenCard"
       ],
-      "disallowed_pools": [ "@BannedFromNexusSpikePool"]
+      "disallowed_pools": [ "@BannedFromNexusSpikePool" ]
     },
     {
       "id": "BannedFromNexusSpike",
       "card_type": "spell",
       "disallowed_pools": [ "@BannedFromNexusSpikePool" ]
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "BannedFromNexusSpikePool"
     }
   ]
 }

@@ -9,10 +9,5 @@
         "macosx": "assets/more_events_assetbundle.macosx.bundle"
       }
     }
-  ],
-  "card_pools": [
-    {
-      "id": "BannedFromNexusSpikePool"
-    }
   ]
 }
