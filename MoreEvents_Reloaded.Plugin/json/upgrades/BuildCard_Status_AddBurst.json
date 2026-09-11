@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddBurst",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddBurst.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddBurst.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "burst",
+          "count": 1
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddBurst.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [burst] [effect0.status0.power].",
+        "french": "Confère [burst] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [burst] an.",
+        "russian": "Накладывает [burst] х[effect0.status0.power].",
+        "portuguese": "Concede [burst] [effect0.status0.power].",
+        "chinese": "获得[burst] [effect0.status0.power]。",
+        "spanish": "Añade [burst] [effect0.status0.power].",
+        "chinese_traditional": "施加[burst][effect0.status0.power]。",
+        "korean": "[burst] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[burst] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddBurst.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

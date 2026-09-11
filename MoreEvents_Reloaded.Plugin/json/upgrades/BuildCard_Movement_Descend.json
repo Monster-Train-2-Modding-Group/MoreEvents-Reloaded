@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_Descend",
+      "card_trigger_upgrades": [
+        "@BuildCard_Descend.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_Descend.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectBump",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "should_test": false,
+      "param_int": -1
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_Descend.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "[descend].",
+        "french": "[descend].",
+        "german": "[descend].",
+        "russian": "[descend].",
+        "portuguese": "[descend].",
+        "chinese": "[descend]。",
+        "spanish": "[descend].",
+        "chinese_traditional": "[descend]。",
+        "korean": "[descend].",
+        "japanese": "[descend]。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_Descend.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

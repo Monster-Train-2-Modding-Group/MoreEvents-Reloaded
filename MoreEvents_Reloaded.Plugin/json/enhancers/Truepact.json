@@ -1,0 +1,123 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "DivineAltarTruePact",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "english": "True Pact"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower] and [piercing].",
+        "french": "Améliore un sort avec +[effect0.upgrade.bonusdamage] [magicpower] et [piercing].",
+        "german": "Verbessere einen Zauber mit +[effect0.upgrade.bonusdamage] [magicpower] und [piercing].",
+        "russian": "Улучшение чар: +[magicpower] х[effect0.upgrade.bonusdamage] и [piercing].",
+        "portuguese": "Melhora um feitiço com +[effect0.upgrade.bonusdamage] [magicpower] e [piercing].",
+        "chinese": "升级一个法术，使其获得 +[effect0.upgrade.bonusdamage] [magicpower] 和 [piercing]。",
+        "spanish": "Mejora un hechizo con +[effect0.upgrade.bonusdamage] [magicpower] y [piercing].",
+        "chinese_traditional": "升級一個法術，使其獲得+[effect0.upgrade.bonusdamage][magicpower]和[piercing]。",
+        "korean": "주문을 업그레이드하여 +[effect0.upgrade.bonusdamage] [magicpower] 및 [piercing] 효과를 얻습니다.",
+        "japanese": "呪文アップグレード：+[effect0.upgrade.bonusdamage] [magicpower]、[piercing]"
+      },
+      "icon": "@Truestone",
+      "relic_effects": [
+        "@DivineAltarTruePact.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DivineAltarTruePact.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "additional_tooltips": [
+        "@DivineAltarTruePact.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "@ChaosScepter"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ChaosScepter",
+      "titles": {
+        "english": "True Pact"
+      },
+      "descriptions": {
+        "english": "+[bonusdamage] [magicpower] and gain [piercing].",
+        "french": "+[bonusdamage] [magicpower] et octroie [piercing].",
+        "german": "+[bonusdamage] [magicpower] und erhalte [piercing].",
+        "russian": "+[magicpower] х[bonusdamage] и дает [piercing].",
+        "portuguese": "+[bonusdamage] [magicpower] e recebe [piercing].",
+        "chinese": "+[bonusdamage] [magicpower]，并获得 [piercing]。",
+        "spanish": "+[bonusdamage] [magicpower] y añade [piercing].",
+        "chinese_traditional": "+[bonusdamage][magicpower]並獲得[piercing]。",
+        "korean": "+[bonusdamage][magicpower] 및 [piercing] 효과를 획득합니다.",
+        "japanese": "+[bonusdamage] [magicpower]、[piercing]を得る。"
+      },
+      "trait_upgrades": [
+        "@DivineAltarTruePact.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "icon": "@Truestone",
+      "hide_icon_on_card": false,
+      "filters": [
+        "MagicPowerSpells",
+        "ExcludedSpellsFromMagicPower",
+        "ExcludeConsume"
+      ],
+      "bonus_damage": 50,
+      "bonus_heal": 50
+    }
+  ],
+  "traits": [
+    {
+      "id": "DivineAltarTruePact.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitIgnoreArmor"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "DivineAltarTruePact.effects0.additionalTooltips0",
+      "descriptions": {
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Truestone",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/Enhancers/SurgeStone.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_GainGold",
+      "card_trigger_upgrades": [
+        "@BuildCard_GainGold.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_GainGold.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectRewardGold",
+      "should_test": false,
+      "param_int": 20
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_GainGold.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Gain +[effect0.power][coin].",
+        "french": "Octroie +[effect0.power][coin].",
+        "german": "Erhalte +[effect0.power][coin].",
+        "russian": "Дает +[effect0.power][coin].",
+        "portuguese": "Receba [effect0.power] [coin].",
+        "chinese": "获得 +[effect0.power][coin]。",
+        "spanish": "Obtienes +[effect0.power][coin].",
+        "chinese_traditional": "獲得+[effect0.power][coin]。",
+        "korean": "+[effect0.power][coin]를 획득합니다.",
+        "japanese": "+[effect0.power][coin]を得る。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_GainGold.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

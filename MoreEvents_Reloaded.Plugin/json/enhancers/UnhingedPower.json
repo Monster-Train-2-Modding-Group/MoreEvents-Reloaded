@@ -1,0 +1,97 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "UnhingedPower",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "english": "Unhinged Power",
+        "french": "Puissance déséquilibrée",
+        "german": "Unkontrollierte Kraft",
+        "russian": "Неукротимая мощь",
+        "portuguese": "Poder Descontrolado",
+        "chinese": "错乱之力"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to cost <nobr><b>0</b>[ember]</nobr> and gain [annihilate].",
+        "french": "Améliore un sort qui coûte <nobr><b>0</b>[ember]</nobr> et gagne [annihilate].",
+        "german": "Verbessere einen Zauber, damit er <nobr><b>0</b>[ember]</nobr> kostet, und erhalte [annihilate].",
+        "russian": "Снижает цену чар на <nobr><b>0</b>[ember]</nobr> и дает [annihilate].",
+        "portuguese": "Melhora um feitiço para custar <nobr><b>0</b>[ember]</nobr> e recebe [annihilate].",
+        "chinese": "升级一个法术，使其费用 <nobr><b>0</b>[ember]</nobr> 并获得 [annihilate]。",
+        "spanish": "Mejora un hechizo para que cueste <nobr><b>0</b>[ember]</nobr> y añade [annihilate].",
+        "chinese_traditional": "升級一個法術，使其費用<nobr><b>0</b>[ember]</nobr>，並獲得[annihilate]。",
+        "korean": "주문 업그레이드로 비용이 <nobr><b>0</b>[ember]</nobr> 감소하며, [annihilate]을 획득합니다.",
+        "japanese": "呪文アップグレード：<nobr><b>0</b>[ember]</nobr>、[annihilate]を得る。"
+      },
+      "icon": "@UnhingedPowerIcon",
+      "relic_effects": [
+        "@UnhingedPower.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "UnhingedPower.effects0",
+      "name": "RelicEffectCardDuplicator",
+      "param_card_type": "spell",
+      "param_int": 3,
+      "param_upgrade": "@UnhingedPowerReduceCostAddPurge",
+      "param_card_filter": "OnlySpells"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UnhingedPowerReduceCostAddPurge",
+      "titles": {
+        "english": "Unhinged Power",
+        "french": "Puissance déséquilibrée",
+        "german": "Unkontrollierte Kraft",
+        "russian": "Неукротимая мощь",
+        "portuguese": "Poder Descontrolado",
+        "chinese": "错乱之力"
+      },
+      "descriptions": {
+        "english": "<b>0</b>[ember] and gain [annihilate].",
+        "french": "<b>0</b>[ember] et octroie [annihilate].",
+        "german": "<b>0</b>[ember] und erhalte [annihilate].",
+        "russian": "<b>0</b>[ember] и дается [annihilate].",
+        "portuguese": "<b>0</b>[ember] e recebe [annihilate].",
+        "chinese": "<b>0</b>[ember] 并获得 [annihilate]。",
+        "spanish": "<b>0</b>[ember] y añade [annihilate].",
+        "chinese_traditional": "<b>0</b>[ember]並獲得[annihilate]。",
+        "korean": "<b>0</b>[ember] 및 [annihilate] 속성을 획득합니다.",
+        "japanese": "<b>0</b>[ember]、[annihilate]を得る。"
+      },
+      "icon": "@UnhingedPowerIcon",
+      "hide_icon_on_card": false,
+      "trait_upgrades": [
+        "@UnhingedPower.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "cost_reduction": 99
+    }
+  ],
+  "traits": [
+    {
+      "id": "UnhingedPower.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitSelfPurge"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "UnhingedPowerIcon",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/Enhancers/UnhingedPower.png"
+      }
+    }
+  ]
+}

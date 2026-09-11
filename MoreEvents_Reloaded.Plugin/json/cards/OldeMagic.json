@@ -1,0 +1,199 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "OldeMagic",
+      "names": {
+        "english": "Olde Magic",
+        "french": "Magie d'antan",
+        "german": "Uralte Magie",
+        "russian": "Старая магия",
+        "portuguese": "Magia Antiga",
+        "chinese": "古老魔法"
+      },
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "rare",
+      "targetless": false,
+      "effects": [ "@OldeMagicNull" ],
+      "card_art": "@CardArt_Spell_OldeMagic"
+    }
+  ],
+  "effects": [
+    {
+      "id": "OldeMagicNull",
+      "name": "CardEffectNULL",
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_OldeMagic",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "animation_clip": {
+            "id": "Anim_Spell_OldeMagic",
+            "sample_rate": 60,
+            "loop_time": "loop",
+            "curves": [
+              {
+                "path": "CardEffectTransforms/orb",
+                "type": "CardEffectTransform",
+                "attribute": "position.y",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 0.02,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 1.5,
+                    "value": 0.04,
+                    "in_tangent": -3.4924597e-09,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 3,
+                    "value": 0.02,
+                    "in_tangent": 3.4924597e-09,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardEffectTransforms/orb",
+                "type": "CardEffectTransform",
+                "attribute": "position.x",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 3,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              },
+              {
+                "path": "CardEffectTransforms/orb",
+                "type": "CardEffectTransform",
+                "attribute": "position.z",
+                "keyframes": [
+                  {
+                    "time": 0,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  },
+                  {
+                    "time": 3,
+                    "value": 0,
+                    "in_tangent": 0,
+                    "out_tangent": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "sprite": "@SPL_OldeMagic_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "@SPL_OldeMagic_01"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "@SPL_OldeMagic_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "@SPL_OldeMagic_03",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              },
+              "stretch": false
+            },
+            {
+              "type": "distortion",
+              "texture": "@SPL_OldeMagic_04",
+              "motion_texture": "@FX_Clouds_01"
+            }
+          ],
+          "transforms": [
+            {
+              "id": "orb",
+              "layers": [
+                0,
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": 0.02,
+                "z": 0.0
+              }
+            }
+          ],
+          "animated_fields": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FX_Clouds_01",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/OldeMagic/FX_Clouds_01.png"
+      }
+    },
+    {
+      "id": "SPL_OldeMagic_01",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/OldeMagic/SPL_OldeMagic_01.png"
+      }
+    },
+    {
+      "id": "SPL_OldeMagic_02",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/OldeMagic/SPL_OldeMagic_02.png"
+      }
+    },
+    {
+      "id": "SPL_OldeMagic_03",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/OldeMagic/SPL_OldeMagic_03.png"
+      }
+    },
+    {
+      "id": "SPL_OldeMagic_04",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/OldeMagic/SPL_OldeMagic_04.png"
+      }
+    }
+  ]
+}

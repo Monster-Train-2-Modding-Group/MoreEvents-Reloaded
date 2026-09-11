@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_ShuffleE",
+      "card_trigger_upgrades": [
+        "@BuildCard_ShuffleE.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_ShuffleE.cardTriggerUpgrades0.cardEffects0",
+      "name": {
+        "id": "@CardEffectShuffleUnits",
+        "mod_reference": "Conductor"
+      },
+      "target_mode": "room",
+      "target_team": "heroes",
+      "should_test": false,
+      "param_int": 1
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_ShuffleE.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-e3b1ff1170d6cf25-4a6fe72cb8c722743a546e22189afc3a-v2",
+        "english": "Shuffle enemy units.",
+        "french": "Mélangez les unités ennemies.",
+        "german": "Mische die gegnerischen Einheiten.",
+        "russian": "Перемешайте вражеские отряды.",
+        "portuguese": "Embaralhe as unidades inimigas.",
+        "chinese": "洗切敌方单位。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_ShuffleE.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

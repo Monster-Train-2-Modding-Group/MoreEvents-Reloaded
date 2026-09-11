@@ -1,0 +1,41 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddCapacity",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddCapacity.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddCapacity.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAdjustRoomCapacity",
+      "should_test": false,
+      "param_int": 1
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddCapacity.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "+[effect0.power][capacity].",
+        "french": "+[effect0.power][capacity].",
+        "german": "+[effect0.power][capacity].",
+        "russian": "+[effect0.power][capacity].",
+        "portuguese": "+[effect0.power][capacity].",
+        "chinese": "+[effect0.power][capacity]。",
+        "spanish": "+[effect0.power][capacity].",
+        "chinese_traditional": "+[effect0.power][capacity]。",
+        "korean": "+[effect0.power][capacity].",
+        "japanese": "+[effect0.power][capacity]。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddCapacity.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

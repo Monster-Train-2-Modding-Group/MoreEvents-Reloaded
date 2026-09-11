@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_Retreat",
+      "card_trigger_upgrades": [
+        "@BuildCard_Retreat.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_Retreat.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "should_test": false,
+      "param_int": 1
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_Retreat.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "[retreat].",
+        "french": "[retreat].",
+        "german": "[retreat]:",
+        "russian": "[retreat].",
+        "portuguese": "[retreat].",
+        "chinese": "[retreat]。",
+        "spanish": "[retreat].",
+        "chinese_traditional": "[retreat]。",
+        "korean": "[retreat].",
+        "japanese": "[retreat]。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_Retreat.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

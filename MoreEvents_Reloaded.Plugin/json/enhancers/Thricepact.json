@@ -1,0 +1,111 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "DivineAltarThricePact",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "english": "Thrice Pact"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to gain <b>Spellchain</b> [effect0.upgrade.trait0.power].",
+        "french": "Améliore un sort pour lui conférer <b>Sorts à la chaîne</b> [effect0.upgrade.trait0.power].",
+        "german": "Verbessere einen Zauber mit dem Erhalt von <b>Zauberkette</b> [effect0.upgrade.trait0.power].",
+        "russian": "Улучшенные чары получают свойство <b>цепочка чар</b> [effect0.upgrade.trait0.power].",
+        "portuguese": "Melhora um feitiço para receber <b>Corrente de Feitiços</b> [effect0.upgrade.trait0.power].",
+        "chinese": "升级一个法术，使其获得<b>法术连锁</b> [effect0.upgrade.trait0.power]。",
+        "spanish": "Mejora un hechizo para añadir <b>Hechizo en cadena</b> [effect0.upgrade.trait0.power].",
+        "chinese_traditional": "升級一個法術，使其獲得<b>咒語連鎖</b> [effect0.upgrade.trait0.power]。",
+        "korean": "주문 업그레이드로 <b>주문 연쇄</b> [effect0.upgrade.trait0.power]를 획득합니다.",
+        "japanese": "呪文アップグレード：<b>呪文連鎖</b> [effect0.upgrade.trait0.power]を得る。"
+      },
+      "icon": "@Twinstone",
+      "relic_effects": [
+        "@DivineAltarThricePact.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DivineAltarThricePact.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@CreateSpellCopyWithPurge",
+      "param_min_int": 1,
+      "param_max_int": 99
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CopyOnPlayTraitUpgrade",
+      "trait_upgrades": [
+        "@DivineAltarThricePact.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "remove_trait_upgrades": [
+        "CardTraitCopyOnPlay"
+      ],
+      "upgrades_to_remove": [
+        "@CreateSpellCopyWithPurge"
+      ]
+    },
+    {
+      "id": "CreateSpellCopyWithPurge",
+      "titles": {
+        "english": "Thricepact"
+      },
+      "descriptions": {
+        "english": "Gain <b>Spellchain</b> [trait0.power].",
+        "french": "Octroie <b>Sorts à la chaîne</b> [trait0.power].",
+        "german": "Erhalte <b>Zauberkette</b> [trait0.power].",
+        "russian": "Дает <b>цепочку чар</b> [trait0.power].",
+        "portuguese": "Recebe <b>Corrente de Feitiços</b> [trait0.power].",
+        "chinese": "获得<b>法术连锁</b> [trait0.power]。",
+        "spanish": "Añade <b>Hechizo en cadena</b> [trait0.power].",
+        "chinese_traditional": "獲得<b>咒語連鎖</b> [trait0.power]。",
+        "korean": "<b>주문 연쇄</b> [trait0.power] 효과를 획득합니다.",
+        "japanese": "<b>呪文連鎖</b> [trait0.power]を得る。"
+      },
+      "icon": "@Twinstone",
+      "hide_icon_on_card": false,
+      "trait_upgrades": [
+        "@DivineAltarThricePact.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeUnplayable",
+        "ExcludeSpellchain"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "DivineAltarThricePact.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitCopyOnPlay",
+      "param_upgrade": "@CopyOnPlayTraitUpgrade",
+      "param_int": 2,
+      "stack_mode": "param_int"
+    },
+    {
+      "id": "DivineAltarThricePact.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitEphemeral",
+      "trait_is_removable": false
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Twinstone",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/Enhancers/TwinStone.png"
+      }
+    }
+  ]
+}

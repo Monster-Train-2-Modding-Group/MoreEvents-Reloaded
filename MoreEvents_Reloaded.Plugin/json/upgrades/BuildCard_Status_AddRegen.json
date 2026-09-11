@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddRegen",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddRegen.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddRegen.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 4
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddRegen.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [regen] [effect0.status0.power].",
+        "french": "Confère [regen] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [regen] an.",
+        "russian": "Накладывает [regen] х[effect0.status0.power].",
+        "portuguese": "Concede [regen] [effect0.status0.power].",
+        "chinese": "获得[regen] [effect0.status0.power]。",
+        "spanish": "Añade [regen] [effect0.status0.power].",
+        "chinese_traditional": "施加[regen][effect0.status0.power]。",
+        "korean": "[regen] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[regen] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddRegen.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

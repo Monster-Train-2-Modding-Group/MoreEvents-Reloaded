@@ -1,0 +1,46 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_HealthUp",
+      "card_trigger_upgrades": [
+        "@BuildCard_HealthUp.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    },
+    {
+      "id": "Plus8Hp",
+      "bonus_hp": 8
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_HealthUp.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_upgrade": "@Plus8Hp"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_HealthUp.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply +[effect0.upgrade.bonushp][health].",
+        "french": "Confère +[effect0.upgrade.bonushp][health].",
+        "german": "Wende +[effect0.upgrade.bonushp][health] an.",
+        "russian": "Дает +[effect0.upgrade.bonushp][health].",
+        "portuguese": "Concede +[effect0.upgrade.bonushp][health].",
+        "chinese": "获得 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Añade +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "施加+[effect0.upgrade.bonushp][health]。",
+        "korean": "+[effect0.upgrade.bonushp][health]을 적용합니다.",
+        "japanese": "+[effect0.upgrade.bonushp][health]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_HealthUp.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

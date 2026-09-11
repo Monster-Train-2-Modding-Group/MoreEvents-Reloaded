@@ -1,0 +1,1659 @@
+﻿{
+  "inkVersion": 19,
+  "root": [
+    [
+      [
+        "done",
+        { "#n": "g-0" }
+      ],
+      null
+    ],
+    "done",
+    {
+      "BuildACard": [
+        [
+          "^<style=\"Body\">An <color=\"yellow\">Arcane Machine</color> peeks through the snow, mechanical arms and controls in various states of disrepair. The large harness in the center looks to have held something vaguely familiar, but you can't place what.",
+          "\n",
+          "^Near the opening of the train, a metal control board stands relatively untouched. Clean, even. Strange.",
+          "\n",
+          "^When you move towards it, the board whirs to life and a single button with a diamond icon flashes at you.</style>",
+          "\n",
+          "^<style=\"Prompt\">Do you press the button?</style>",
+          "\n",
+          "ev",
+          "str",
+          "^Accept",
+          "/str",
+          "/ev",
+          {
+            "*": ".^.c-0",
+            "flg": 4
+          },
+          "ev",
+          "str",
+          "^Leave",
+          "/str",
+          "/ev",
+          {
+            "*": ".^.c-1",
+            "flg": 4
+          },
+          {
+            "c-0": [
+              "\n",
+              "ev",
+              -1,
+              -1,
+              {
+                "x()": "MoreEvents_SetBuildACardOption",
+                "exArgs": 2
+              },
+              "out",
+              "/ev",
+              "\n",
+              { "->": ".^.^.^.FirstComponent" },
+              null
+            ],
+            "c-1": [ "\n", "end", null ]
+          }
+        ],
+        {
+          "FirstComponent": [
+            [
+              "ev",
+              1,
+              4,
+              "rnd",
+              "/ev",
+              { "temp=": "roll" },
+              "\n",
+              "^<style=\"Body\">A row of levers rises from the metal board, each one adorned with symbols you can only assume refer to various health-related effects.</style>",
+              "\n",
+              "^<style=\"Prompt\">What do you pull?</style>",
+              "\n",
+              "ev",
+              { "VAR?": "roll" },
+              1,
+              "!=",
+              "/ev",
+              [
+                {
+                  "->": ".^.b",
+                  "c": true
+                },
+                {
+                  "b": [
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Primary_Upgrade0",
+                    "/str",
+                    "/ev",
+                    {
+                      "*": ".^.c-0",
+                      "flg": 4
+                    },
+                    { "->": ".^.^.^.17" },
+                    {
+                      "c-0": [
+                        "\n",
+                        "ev",
+                        0,
+                        0,
+                        {
+                          "x()": "MoreEvents_SetBuildACardOption",
+                          "exArgs": 2
+                        },
+                        "out",
+                        "/ev",
+                        "\n",
+                        "^<style=\"Keyword\"><align=\"center\">You selected Jagged Lines.</align></style>",
+                        "\n",
+                        { "->": "BuildACard.SecondComponent" },
+                        null
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "nop",
+              "\n",
+              "ev",
+              { "VAR?": "roll" },
+              2,
+              "!=",
+              "/ev",
+              [
+                {
+                  "->": ".^.b",
+                  "c": true
+                },
+                {
+                  "b": [
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Primary_Upgrade1",
+                    "/str",
+                    "/ev",
+                    {
+                      "*": ".^.c-0",
+                      "flg": 4
+                    },
+                    { "->": ".^.^.^.25" },
+                    {
+                      "c-0": [
+                        "\n",
+                        "ev",
+                        0,
+                        1,
+                        {
+                          "x()": "MoreEvents_SetBuildACardOption",
+                          "exArgs": 2
+                        },
+                        "out",
+                        "/ev",
+                        "\n",
+                        "^<style=\"Keyword\"><align=\"center\">You selected Smooth Waves.</align></style>",
+                        "\n",
+                        { "->": "BuildACard.SecondComponent" },
+                        null
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "nop",
+              "\n",
+              "ev",
+              { "VAR?": "roll" },
+              3,
+              "!=",
+              "/ev",
+              [
+                {
+                  "->": ".^.b",
+                  "c": true
+                },
+                {
+                  "b": [
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Primary_Upgrade2",
+                    "/str",
+                    "/ev",
+                    {
+                      "*": ".^.c-0",
+                      "flg": 4
+                    },
+                    { "->": ".^.^.^.33" },
+                    {
+                      "c-0": [
+                        "\n",
+                        "ev",
+                        0,
+                        2,
+                        {
+                          "x()": "MoreEvents_SetBuildACardOption",
+                          "exArgs": 2
+                        },
+                        "out",
+                        "/ev",
+                        "\n",
+                        "^<style=\"Keyword\"><align=\"center\">You selected Upward Red Arrows.</align></style>",
+                        "\n",
+                        { "->": "BuildACard.SecondComponent" },
+                        null
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "nop",
+              "\n",
+              "ev",
+              { "VAR?": "roll" },
+              4,
+              "!=",
+              "/ev",
+              [
+                {
+                  "->": ".^.b",
+                  "c": true
+                },
+                {
+                  "b": [
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Primary_Upgrade3",
+                    "/str",
+                    "/ev",
+                    {
+                      "*": ".^.c-0",
+                      "flg": 4
+                    },
+                    { "->": ".^.^.^.41" },
+                    {
+                      "c-0": [
+                        "\n",
+                        "ev",
+                        0,
+                        3,
+                        {
+                          "x()": "MoreEvents_SetBuildACardOption",
+                          "exArgs": 2
+                        },
+                        "out",
+                        "/ev",
+                        "\n",
+                        "^<style=\"Keyword\"><align=\"center\">You selected Upward Green Arrows.</align></style>",
+                        "\n",
+                        { "->": "BuildACard.SecondComponent" },
+                        null
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "nop",
+              "\n",
+              "ev",
+              "str",
+              "^nothing",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-0",
+                "flg": 4
+              },
+              {
+                "c-0": [
+                  "\n",
+                  { "->": ".^.^.^.^.SecondComponent" },
+                  null
+                ]
+              }
+            ],
+            null
+          ],
+          "SecondComponent": [
+            [
+              "ev",
+              1,
+              13,
+              "rnd",
+              "/ev",
+              { "temp=": "first" },
+              "\n",
+              "ev",
+              1,
+              13,
+              "rnd",
+              "/ev",
+              { "temp=": "second" },
+              "\n",
+              "ev",
+              1,
+              13,
+              "rnd",
+              "/ev",
+              { "temp=": "third" },
+              "\n",
+              [
+                "ev",
+                { "VAR?": "second" },
+                { "VAR?": "first" },
+                "==",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      1,
+                      13,
+                      "rnd",
+                      "/ev",
+                      {
+                        "temp=": "second",
+                        "re": true
+                      },
+                      "\n",
+                      { "->": ".^.^.^" },
+                      { "->": ".^.^.^.6" },
+                      null
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                [
+                  "ev",
+                  { "VAR?": "third" },
+                  { "VAR?": "first" },
+                  "==",
+                  { "VAR?": "third" },
+                  { "VAR?": "second" },
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        1,
+                        13,
+                        "rnd",
+                        "/ev",
+                        {
+                          "temp=": "third",
+                          "re": true
+                        },
+                        "\n",
+                        { "->": ".^.^.^" },
+                        { "->": ".^.^.^.10" },
+                        null
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "^<style=\"Body\">A row of levers rises from the metal board, each one adorned with symbols you can only assume refer to various elemental effects.</style>",
+                  "\n",
+                  "^<style=\"Prompt\">What do you press?</style>",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  1,
+                  "==",
+                  { "VAR?": "second" },
+                  1,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  1,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade0",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.30" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            0,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the shield icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  2,
+                  "==",
+                  { "VAR?": "second" },
+                  2,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  2,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade1",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.46" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            1,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the life icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  3,
+                  "==",
+                  { "VAR?": "second" },
+                  3,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  3,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade2",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.62" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            2,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the sludge icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  4,
+                  "==",
+                  { "VAR?": "second" },
+                  4,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  4,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade3",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.78" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            3,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the snow icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  5,
+                  "==",
+                  { "VAR?": "second" },
+                  5,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  5,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade4",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.94" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            4,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the shards icons.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  6,
+                  "==",
+                  { "VAR?": "second" },
+                  6,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  6,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade5",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.110" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            5,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the flame icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  7,
+                  "==",
+                  { "VAR?": "second" },
+                  7,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  7,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade6",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.126" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            6,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the gear icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  8,
+                  "==",
+                  { "VAR?": "second" },
+                  8,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  8,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade7",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.142" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            7,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the star icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  9,
+                  "==",
+                  { "VAR?": "second" },
+                  9,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  9,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade8",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.158" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            8,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the mushroom icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  10,
+                  "==",
+                  { "VAR?": "second" },
+                  10,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  10,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade9",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.174" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            9,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the dragon icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  11,
+                  "==",
+                  { "VAR?": "second" },
+                  11,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  11,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade10",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.190" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            10,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the explosion icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  12,
+                  "==",
+                  { "VAR?": "second" },
+                  12,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  12,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade11",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.206" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            11,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the angel icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  { "VAR?": "first" },
+                  13,
+                  "==",
+                  { "VAR?": "second" },
+                  13,
+                  "==",
+                  "||",
+                  { "VAR?": "third" },
+                  13,
+                  "==",
+                  "||",
+                  "/ev",
+                  [
+                    {
+                      "->": ".^.b",
+                      "c": true
+                    },
+                    {
+                      "b": [
+                        "\n",
+                        "ev",
+                        "str",
+                        "^Status_Upgrade12",
+                        "/str",
+                        "/ev",
+                        {
+                          "*": ".^.c-0",
+                          "flg": 4
+                        },
+                        { "->": ".^.^.^.222" },
+                        {
+                          "c-0": [
+                            "\n",
+                            "ev",
+                            1,
+                            12,
+                            {
+                              "x()": "MoreEvents_SetBuildACardOption",
+                              "exArgs": 2
+                            },
+                            "out",
+                            "/ev",
+                            "\n",
+                            "^<style=\"Keyword\"><align=\"center\">You pressed the greed icon.</align></style>",
+                            "\n",
+                            { "->": "BuildACard.ThirdComponent" },
+                            null
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "nop",
+                  "\n",
+                  "ev",
+                  "str",
+                  "^nothing",
+                  "/str",
+                  "/ev",
+                  {
+                    "*": ".^.c-0",
+                    "flg": 4
+                  },
+                  {
+                    "c-0": [
+                      "\n",
+                      { "->": "BuildACard.ThirdComponent" },
+                      null
+                    ],
+                    "#n": "check_third"
+                  }
+                ],
+                { "#n": "check_second" }
+              ],
+              null
+            ],
+            null
+          ],
+          "ThirdComponent": [
+            [
+              "ev",
+              1,
+              5,
+              "rnd",
+              "/ev",
+              { "temp=": "roll" },
+              "\n",
+              "ev",
+              1,
+              5,
+              "rnd",
+              "/ev",
+              { "temp=": "roll2" },
+              "\n",
+              "ev",
+              1,
+              2,
+              "rnd",
+              "/ev",
+              { "temp=": "shuffle_opt" },
+              "\n",
+              [
+                "ev",
+                { "VAR?": "roll2" },
+                { "VAR?": "roll" },
+                "==",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      1,
+                      5,
+                      "rnd",
+                      "/ev",
+                      {
+                        "temp=": "roll2",
+                        "re": true
+                      },
+                      "\n",
+                      { "->": ".^.^.^" },
+                      { "->": ".^.^.^.6" },
+                      null
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "^<style=\"Body\">A small rod rises from a space in the board. It can be moved in 4 directions, though one direction is blocked entirely.</style>",
+                "\n",
+                "^<style=\"Prompt\">Which direction do you shift the rod to?</style>",
+                "\n",
+                "ev",
+                { "VAR?": "roll" },
+                1,
+                "==",
+                { "VAR?": "roll2" },
+                1,
+                "==",
+                "||",
+                "!",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      "str",
+                      "^Movement_Upgrade0",
+                      "/str",
+                      "/ev",
+                      {
+                        "*": ".^.c-0",
+                        "flg": 4
+                      },
+                      { "->": ".^.^.^.23" },
+                      {
+                        "c-0": [
+                          "\n",
+                          "ev",
+                          2,
+                          0,
+                          {
+                            "x()": "MoreEvents_SetBuildACardOption",
+                            "exArgs": 2
+                          },
+                          "out",
+                          "/ev",
+                          "\n",
+                          "^<style=\"Keyword\"><align=\"center\">You chose Forward.</align></style>",
+                          "\n",
+                          { "->": "BuildACard.FourthComponent" },
+                          null
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                { "VAR?": "roll" },
+                2,
+                "==",
+                { "VAR?": "roll2" },
+                2,
+                "==",
+                "||",
+                "!",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      "str",
+                      "^Movement_Upgrade1",
+                      "/str",
+                      "/ev",
+                      {
+                        "*": ".^.c-0",
+                        "flg": 4
+                      },
+                      { "->": ".^.^.^.36" },
+                      {
+                        "c-0": [
+                          "\n",
+                          "ev",
+                          2,
+                          1,
+                          {
+                            "x()": "MoreEvents_SetBuildACardOption",
+                            "exArgs": 2
+                          },
+                          "out",
+                          "/ev",
+                          "\n",
+                          "^<style=\"Keyword\"><align=\"center\">You chose Backward.</align></style>",
+                          "\n",
+                          { "->": "BuildACard.FourthComponent" },
+                          null
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                { "VAR?": "roll" },
+                3,
+                "==",
+                { "VAR?": "roll2" },
+                3,
+                "==",
+                "||",
+                "!",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      "str",
+                      "^Movement_Upgrade2",
+                      "/str",
+                      "/ev",
+                      {
+                        "*": ".^.c-0",
+                        "flg": 4
+                      },
+                      { "->": ".^.^.^.49" },
+                      {
+                        "c-0": [
+                          "\n",
+                          "ev",
+                          2,
+                          2,
+                          {
+                            "x()": "MoreEvents_SetBuildACardOption",
+                            "exArgs": 2
+                          },
+                          "out",
+                          "/ev",
+                          "\n",
+                          "^<style=\"Keyword\"><align=\"center\">You chose Down.</align></style>",
+                          "\n",
+                          { "->": "BuildACard.FourthComponent" },
+                          null
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                { "VAR?": "roll" },
+                4,
+                "==",
+                { "VAR?": "roll2" },
+                4,
+                "==",
+                "||",
+                "!",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      "str",
+                      "^Movement_Upgrade3",
+                      "/str",
+                      "/ev",
+                      {
+                        "*": ".^.c-0",
+                        "flg": 4
+                      },
+                      { "->": ".^.^.^.62" },
+                      {
+                        "c-0": [
+                          "\n",
+                          "ev",
+                          2,
+                          3,
+                          {
+                            "x()": "MoreEvents_SetBuildACardOption",
+                            "exArgs": 2
+                          },
+                          "out",
+                          "/ev",
+                          "\n",
+                          "^<style=\"Keyword\"><align=\"center\">You chose Up.</align></style>",
+                          "\n",
+                          { "->": "BuildACard.FourthComponent" },
+                          null
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                { "VAR?": "roll" },
+                5,
+                "==",
+                { "VAR?": "roll2" },
+                5,
+                "==",
+                "||",
+                "!",
+                { "VAR?": "shuffle_opt" },
+                1,
+                "==",
+                "&&",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      "str",
+                      "^Movement_Upgrade4",
+                      "/str",
+                      "/ev",
+                      {
+                        "*": ".^.c-0",
+                        "flg": 4
+                      },
+                      { "->": ".^.^.^.79" },
+                      {
+                        "c-0": [
+                          "\n",
+                          "ev",
+                          2,
+                          4,
+                          {
+                            "x()": "MoreEvents_SetBuildACardOption",
+                            "exArgs": 2
+                          },
+                          "out",
+                          "/ev",
+                          "\n",
+                          "^<style=\"Keyword\"><align=\"center\">You spun the Joystick clockwise.</align></style>",
+                          "\n",
+                          { "->": "BuildACard.FourthComponent" },
+                          null
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                { "VAR?": "roll" },
+                5,
+                "==",
+                { "VAR?": "roll2" },
+                5,
+                "==",
+                "||",
+                "!",
+                { "VAR?": "shuffle_opt" },
+                2,
+                "==",
+                "&&",
+                "/ev",
+                [
+                  {
+                    "->": ".^.b",
+                    "c": true
+                  },
+                  {
+                    "b": [
+                      "\n",
+                      "ev",
+                      "str",
+                      "^Movement_Upgrade5",
+                      "/str",
+                      "/ev",
+                      {
+                        "*": ".^.c-0",
+                        "flg": 4
+                      },
+                      { "->": ".^.^.^.96" },
+                      {
+                        "c-0": [
+                          "\n",
+                          "ev",
+                          2,
+                          5,
+                          {
+                            "x()": "MoreEvents_SetBuildACardOption",
+                            "exArgs": 2
+                          },
+                          "out",
+                          "/ev",
+                          "\n",
+                          "^<style=\"Keyword\"><align=\"center\">You spun the Joystick counter-clockwise.</align></style>",
+                          "\n",
+                          { "->": "BuildACard.FourthComponent" },
+                          null
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                "str",
+                "^nothing",
+                "/str",
+                "/ev",
+                {
+                  "*": ".^.c-0",
+                  "flg": 4
+                },
+                {
+                  "c-0": [
+                    "\n",
+                    { "->": "BuildACard.FourthComponent" },
+                    null
+                  ],
+                  "#n": "check_second_in_third"
+                }
+              ],
+              null
+            ],
+            null
+          ],
+          "FourthComponent": [
+            [
+              "^<style=\"Body\">Several switches appear on the board, each one decorated with a complex series of symbols you can't decipher.</style>",
+              "\n",
+              "^<style=\"Prompt\">Do you switch any of them on?</style>",
+              "\n",
+              "ev",
+              "str",
+              "^Bonus_Upgrade0",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-0",
+                "flg": 4
+              },
+              "ev",
+              "str",
+              "^Bonus_Upgrade1",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-1",
+                "flg": 4
+              },
+              "ev",
+              "str",
+              "^Bonus_Upgrade2",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-2",
+                "flg": 4
+              },
+              "ev",
+              "str",
+              "^nothing",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-3",
+                "flg": 4
+              },
+              {
+                "c-0": [
+                  "\n",
+                  "ev",
+                  3,
+                  0,
+                  {
+                    "x()": "MoreEvents_SetBuildACardOption",
+                    "exArgs": 2
+                  },
+                  "out",
+                  "/ev",
+                  "\n",
+                  "^<style=\"Keyword\"><align=\"center\">You switched on the space-related switch.</align></style>",
+                  "\n",
+                  { "->": ".^.^.^.^.Final" },
+                  null
+                ],
+                "c-1": [
+                  "\n",
+                  "ev",
+                  3,
+                  1,
+                  {
+                    "x()": "MoreEvents_SetBuildACardOption",
+                    "exArgs": 2
+                  },
+                  "out",
+                  "/ev",
+                  "\n",
+                  "^<style=\"Keyword\"><align=\"center\">You switched on the power-related toggle.</align></style>",
+                  "\n",
+                  { "->": ".^.^.^.^.Final" },
+                  null
+                ],
+                "c-2": [
+                  "\n",
+                  "ev",
+                  3,
+                  2,
+                  {
+                    "x()": "MoreEvents_SetBuildACardOption",
+                    "exArgs": 2
+                  },
+                  "out",
+                  "/ev",
+                  "\n",
+                  "^<style=\"Keyword\"><align=\"center\">You switched on the gold-related toggle.</align></style>",
+                  "\n",
+                  { "->": ".^.^.^.^.Final" },
+                  null
+                ],
+                "c-3": [
+                  "\n",
+                  { "->": ".^.^.^.^.Final" },
+                  null
+                ]
+              }
+            ],
+            null
+          ],
+          "Final": [
+            [
+              "^<style=\"Body\">The buttons and levers of the control panel recede into the metal box as the entire device sinks into the ground. The metal harness clamps shut, likely trying to embrace whatever once existed in its grasp.",
+              "\n",
+              "^But as the metal arms link, the train starts to shudder. No, your <i><style=\"Keyword\">Pyre</style></i> starts to rumble. Perhaps in recognition?",
+              "\n",
+              "^Before any logical thought can form, a blinding flash of light knocks you back. What's left behind is a polished, black orb, not unlike the Pyre itself.</style>",
+              "\n",
+              "^<style=\"Prompt\">Do you take the orb?</style>",
+              "\n",
+              "ev",
+              "str",
+              "^TakeCard",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-0",
+                "flg": 4
+              },
+              "ev",
+              "str",
+              "^LeaveCard",
+              "/str",
+              "/ev",
+              {
+                "*": ".^.c-1",
+                "flg": 4
+              },
+              {
+                "c-0": [ "\n", "^>>>GIVE_REWARD: @BuildACardReward", "\n", "end", null ],
+                "c-1": [ "\n", "^<style=\"Body\">Right. Best to leave the relics of the arcane untouched. Especially those of the Pyre-shaking variety.</style>", "\n", "end", null ]
+              }
+            ],
+            null
+          ]
+        }
+      ]
+    }
+  ],
+  "listDefs": {}
+}

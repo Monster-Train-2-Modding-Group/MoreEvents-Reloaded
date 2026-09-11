@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddFrostbite",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddFrostbite.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddFrostbite.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 8
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddFrostbite.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power].",
+        "french": "Confère [frostbite] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [frostbite] an.",
+        "russian": "Накладывает [frostbite] х[effect0.status0.power].",
+        "portuguese": "Concede [frostbite] [effect0.status0.power].",
+        "chinese": "获得[frostbite] [effect0.status0.power]。",
+        "spanish": "Añade [frostbite] [effect0.status0.power].",
+        "chinese_traditional": "施加[frostbite][effect0.status0.power]。",
+        "korean": "[frostbite] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[frostbite] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddFrostbite.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

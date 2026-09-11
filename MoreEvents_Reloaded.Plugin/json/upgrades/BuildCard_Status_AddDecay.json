@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddDecay",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddDecay.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddDecay.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "decay",
+          "count": 2
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddDecay.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [decay] [effect0.status0.power].",
+        "french": "Confère [decay] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [decay] an.",
+        "russian": "Накладывает [decay] х[effect0.status0.power].",
+        "portuguese": "Concede [decay] [effect0.status0.power].",
+        "chinese": "获得[decay] [effect0.status0.power]。",
+        "spanish": "Añade [decay] [effect0.status0.power].",
+        "chinese_traditional": "施加[decay][effect0.status0.power]。",
+        "korean": "[decay] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[decay] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddDecay.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,843 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "events": [
+    {
+      "id": "BuildACard",
+      "knot_name": "BuildACard",
+      "num_runs_completed_to_see": 1,
+      "priority_ticket_count": 25,
+      "num_classes_needed_to_show": 6,
+      "min_distance_allowed": 3,
+      "max_distance_allowed": 8,
+      "story_data": "assets/data/BuildACard.ink.json",
+      "is_followup_event": false,
+      "design_contributor": "MT1",
+      "prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_SoulForge.prefab",
+        "asset_guid": "b76e8508db915a64eb443f677393a100"
+      },
+      "soul_savior_prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_SoulForge.prefab",
+        "asset_guid": "2f33109f1f3a29d438fc7badcb751cce"
+      },
+      "texts": [
+        {
+          "english": "<style=\"Body\">A row of levers rises from the metal board, each one adorned with symbols you can only assume refer to various elemental effects.</style>",
+          "french": "<style=\"Body\">Une série de leviers surgit alors du panneau métallique, chacun orné de symboles que vous pensez liés à divers effets d'éléments.</style>",
+          "german": "<style=\"Body\">Mehrere Steuerhebel heben sich aus der Metallplatte. Jeder ist mit einem anderen Symbol versehen, die vermutlich allesamt mit verschiedenen elementaren Effekten zu tun haben.</style>",
+          "russian": "<style=\"Body\">Из металлической панели выезжает несколько рычагов. Их украшают символы, которые, как вам кажется, обозначают те или иные стихийные эффекты.</style>",
+          "portuguese": "<style=\"Body\">Uma fileira de alavancas surge do painel metálico, cada uma adornada com símbolos que você presume que se referem a diversos efeitos elementais.</style>",
+          "chinese": "<style=\"Body\">一排拉杆从仪表板里升起，每根上都装饰着图案，你猜测它们代表各种元素效果。</style>"
+        },
+        {
+          "english": "<style=\"Body\">A row of levers rises from the metal board, each one adorned with symbols you can only assume refer to various health-related effects.</style>",
+          "french": "<style=\"Body\">Une série de leviers surgit alors du panneau métallique, chacun orné de symboles que vous pensez liés à des effets de santé.</style>",
+          "german": "<style=\"Body\">Mehrere Steuerhebel heben sich aus der Metallplatte. Jeder ist mit einem anderen Symbol versehen, die vermutlich allesamt mit verschiedenen gesundheitlichen Effekten zu tun haben.</style>",
+          "russian": "<style=\"Body\">Из металлической панели выезжает несколько рычагов. Их украшают символы, которые, как вам кажется, обозначают те или иные связанные со здоровьем эффекты.</style>",
+          "portuguese": "<style=\"Body\">Uma fileira de alavancas surge do painel metálico, cada uma adornada com símbolos que você presume que se referem a diversos efeitos elementais.</style>",
+          "chinese": "<style=\"Body\">一排拉杆从仪表板里升起，每根上都装饰着图案，你猜测它们代表各种元素效果。</style>"
+        },
+        {
+          "english": "<style=\"Body\">A small rod rises from a space in the board. It can be moved in 4 directions, though one direction is blocked entirely.</style>",
+          "french": "<style=\"Body\">Une petite tige ressort du tableau. Elle peut être orientée dans quatre directions, mais l'une d'elles est totalement bloquée.</style>",
+          "german": "<style=\"Body\">Ein kleiner Knüppel hebt sich aus einem Einlass im Steuerpult. Er kann in 4 Richtungen bewegt werden, eine Richtung scheint jedoch blockiert zu sein.</style>",
+          "russian": "<style=\"Body\">Из отверстия в панели появляется небольшая ручка. Ее можно наклонить в любую из 4 сторон, но сейчас одно из направлений заблокировано.</style>",
+          "portuguese": "<style=\"Body\">Um bastão emerge de um espaço no painel. Ele pode ser movido em quatro direções, ainda que uma delas esteja totalmente bloqueada.</style>",
+          "chinese": "<style=\"Body\">仪表板的空隙里升起一根小操纵杆。它可以朝四个方向移动，只是一个方向被完全卡住了。</style>"
+        },
+        {
+          "english": "<style=\"Body\">An <color=\"yellow\">Arcane Machine</color> peeks through the snow, mechanical arms and controls in various states of disrepair. The large harness in the center looks to have held something vaguely familiar, but you can't place what.",
+          "french": "<style=\"Body\">Une <color=\"yellow\">Machine des arcanes</color> émerge de la neige, ses bras et commandes mécaniques plus ou moins en état de fonctionnement. La large partie centrale a dû contenir autrefois quelque chose de vaguement familier, mais qui vous échappe.",
+          "german": "<style=\"Body\">Eine <color=\"yellow\">arkane Maschine</color> ragt aus dem Schnee. Ihre mechanischen Arme und Steuerelemente sehen mitgenommen aus. Die große Halterung hat eine Form, die dir vertraut vorkommt, aber du kannst nicht genau sagen, warum.",
+          "russian": "<style=\"Body\">Из-под снега виднеется <color=\"yellow\">магическая машина</color>; ее механические руки и элементы управления в весьма плачевном состоянии. Похоже, в больших захватах по центру должно быть что-то смутно знакомое, но вы не можете определить, что именно.",
+          "portuguese": "<style=\"Body\">Uma <color=\"yellow\">Máquina Arcana</color> espreita através da neve, braços mecânicos e controles em vários estados de ruína. O amplo arreio no centro parece ter contido algo vagamente familiar, mas você não consegue dizer o quê.",
+          "chinese": "<style=\"Body\">你透过白雪看到一台<color=\"yellow\">秘法机械</color>，上面的机械臂和操控装置都存在不同程度的损坏。中央的大型带状装置里似乎固定着什么眼熟的东西，但你一时想不起来。"
+        },
+        {
+          "english": "<style=\"Body\">Right. Best to leave the relics of the arcane untouched. Especially those of the Pyre-shaking variety.</style>",
+          "french": "<style=\"Body\">C'est vrai. Mieux vaut ne pas toucher aux reliques des arcanes. Surtout à celles qui ont un effet sur le Brasier.</style>",
+          "german": "<style=\"Body\">Vielleicht ist es besser, arkane Objekte in Ruhe zu lassen. Vor allem, wenn diese die Höllenglut zum Beben bringen können.</style>",
+          "russian": "<style=\"Body\">Точно. Лучше оставить магические реликвии в покое. В особенности те из них, что могут встряхнуть Пекло.</style>",
+          "portuguese": "<style=\"Body\">Certo. Melhor não mexer com as relíquias arcanas. Especialmente as que fazem a Pira tremer.</style>",
+          "chinese": "<style=\"Body\">右。最好别碰这些秘法遗物。尤其是能令薪火颤动的那种。</style>"
+        },
+        {
+          "english": "<style=\"Body\">Several switches appear on the board, each one decorated with a complex series of symbols you can't decipher.</style>",
+          "french": "<style=\"Body\">Plusieurs interrupteurs apparaissent sur le tableau, chacun orné d'une série de symboles complexes que vous ne reconnaissez pas.</style>",
+          "german": "<style=\"Body\">Mehrere Schalter erscheinen auf dem Steuerpult. Jeder Schalter ist mit komplizierten Symbolen versehen, die du nicht entziffern kannst.</style>",
+          "russian": "<style=\"Body\">На панели появляется несколько переключателей. Они украшены странными символами, которые вы не в силах расшифровать.</style>",
+          "portuguese": "<style=\"Body\">Vários interruptores aparecem no painel, cada um decorado com uma complexa gama de símbolos que você não consegue decifrar.</style>",
+          "chinese": "<style=\"Body\">仪表板上出现若干开关，每个上都装饰着你看不懂的复杂符号。</style>"
+        },
+        {
+          "english": "<style=\"Body\">The buttons and levers of the control panel recede into the metal box as the entire device sinks into the ground. The metal harness clamps shut, likely trying to embrace whatever once existed in its grasp.",
+          "french": "<style=\"Body\">Les boutons et leviers du tableau de commande se replient dans la boîte en métal, alors que le dispositif s'enfonce dans le sol. Les pinces de la partie centrale se referment, comme si elles tentaient d'agripper ce qui était autrefois à leur portée.",
+          "german": "<style=\"Body\">Die Knöpfe und Hebel sinken zurück in das Steuerpult und das gesamte Gerät taucht unter die Erde. Die Klammern der Metallhalterung verankern sich, um vergeblich etwas zu greifen, das sich früher dort befunden haben muss.",
+          "russian": "<style=\"Body\">Кнопки и рычаги панели управления исчезают в металлическом ящике, а все устройство погружается под землю. Металлические захваты сжимаются, вероятно в попытке схватить то, что некогда в них находилось.",
+          "portuguese": "<style=\"Body\">Os botões e alavancas do painel de controle regressam à caixa de metal enquanto o dispositivo afunda no chão. O arreio metálico se fecha, provavelmente tentando envolver o que quer que tenha ali existido.",
+          "chinese": "<style=\"Body\">仪表板上的按钮和拉杆缩回了金属箱体中，整台装置也陷入了地面。金属带状装置的夹具扣死，大概是为了固定曾经要固定的东西。"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You chose Backward.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez choisi En arrière.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast dich für rückwärts entschieden.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы наклоняете ручку назад.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você escolheu Para trás.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你选择了向后。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You chose Down.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez choisi Bas.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast dich für unten entschieden.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы наклоняете ручку вниз.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você escolheu Para Baixo.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你选择了向下。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You chose Forward.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez choisi En avant.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast dich für vorwärts entschieden.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы наклоняете ручку вперед.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você escolheu Para frente.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你选择了向前。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You chose Up.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez choisi Haut.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast dich für oben entschieden.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы наклоняете ручку вверх.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você escolheu Para Cima.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你选择了向上。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the angel icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the dragon icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the explosion icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the flame icon.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'icône de flamme.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast das Feuer-Symbol gedrückt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы нажимаете на значок огня.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você pressionou o ícone da chama.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你按下了火焰图案。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the gear icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the greed icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the life icon.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'icône de vie.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast das Leben-Symbol gedrückt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы нажимаете на значок жизни.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você pressionou o ícone da vida.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你按下了生命图案。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the mushroom icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the shards icons.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'icône d'éclats.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast das Splitter-Symbol gedrückt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы нажимаете на значок осколка.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você pressionou os ícones dos estilhaços.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你按下了碎片图案。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the shield icon.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'icône de bouclier.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast das Schild-Symbol gedrückt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы нажимаете на значок щита.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você pressionou o ícone do escudo.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你按下了坚盾图案。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the sludge icon.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'icône Visqueux.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast das Matsch-Symbol gedrückt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы нажимаете на значок слизи.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você pressionou o ícone do lodo.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你按下了蜡油图案。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the snow icon.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'icône de neige.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast das Schnee-Symbol gedrückt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы нажимаете на значок снега.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você pressionou o ícone da neve.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你按下了雪花图案。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You pressed the star icon.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You selected Jagged Lines.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez sélectionné les lignes irrégulières.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast die gezackten Linien gewählt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы выбираете неровные линии.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você selecionou Linhas Denteadas.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你选择了锯齿状线条。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You selected Smooth Waves.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez sélectionné les vagues régulières.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast die glatten Wellen gewählt.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы выбираете плавные волны.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você selecionou Ondas Suaves.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你选择了平静的波浪。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You selected Upward Green Arrows.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You selected Upward Red Arrows.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You spun the Joystick clockwise.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You spun the Joystick counter-clockwise.</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You switched on the gold-related toggle.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'interrupteur lié à l'or.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast den Schalter umgelegt, der mit Gold zu tun hat.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы используете переключатель золота.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você ativou o relacionado ao ouro.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你打开了和金币有关的开关。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You switched on the power-related toggle.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'interrupteur lié à la puissance.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast den Schalter umgelegt, der mit Macht zu tun hat.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы используете переключатель силы.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você ativou o interruptor relacionado ao poder.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你打开了和力量有关的开关。</align></style>"
+        },
+        {
+          "english": "<style=\"Keyword\"><align=\"center\">You switched on the space-related switch.</align></style>",
+          "french": "<style=\"Keyword\"><align=\"center\">Vous avez appuyé sur l'interrupteur lié à l'espace.</align></style>",
+          "german": "<style=\"Keyword\"><align=\"center\">Du hast den Schalter umgelegt, der mit Raum zu tun hat.</align></style>",
+          "russian": "<style=\"Keyword\"><align=\"center\">Вы используете переключатель пространства.</align></style>",
+          "portuguese": "<style=\"Keyword\"><align=\"center\">Você ativou o interruptor relacionado ao espaço.</align></style>",
+          "chinese": "<style=\"Keyword\"><align=\"center\">你打开了和空间有关的开关。</align></style>"
+        },
+        {
+          "english": "<style=\"Prompt\">Do you press the button?</style>",
+          "french": "<style=\"Prompt\">Appuyez-vous sur le bouton ?</style>",
+          "german": "<style=\"Prompt\">Drückst du den Knopf?</style>",
+          "russian": "<style=\"Prompt\">Нажать кнопку?</style>",
+          "portuguese": "<style=\"Prompt\">Você aperta o botão?</style>",
+          "chinese": "<style=\"Prompt\">你按按钮了吗？</style>"
+        },
+        {
+          "english": "<style=\"Prompt\">Do you switch any of them on?</style>",
+          "french": "<style=\"Prompt\">Appuyez-vous sur l'un d'eux ?</style>",
+          "german": "<style=\"Prompt\">Schaltest du einige von ihnen an?</style>",
+          "russian": "<style=\"Prompt\">Хотите воспользоваться каким-либо из них?</style>",
+          "portuguese": "<style=\"Prompt\">Você ativa algum deles?</style>",
+          "chinese": "<style=\"Prompt\">是否打开其中之一？</style>"
+        },
+        {
+          "english": "<style=\"Prompt\">Do you take the orb?</style>",
+          "french": "<style=\"Prompt\">Prenez-vous l'orbe ?</style>",
+          "german": "<style=\"Prompt\">Nimmst du die Kugel an dich?</style>",
+          "russian": "<style=\"Prompt\">Хотите забрать сферу?</style>",
+          "portuguese": "<style=\"Prompt\">Você pega o orbe?</style>",
+          "chinese": "<style=\"Prompt\">是否拿走球体？</style>"
+        },
+        {
+          "english": "<style=\"Prompt\">What do you press?</style>",
+          "french": "<style=\"Prompt\">Sur quoi appuyez-vous ?</style>",
+          "german": "<style=\"Prompt\">Welchen Knopf drückst du?</style>",
+          "russian": "<style=\"Prompt\">Что нажмете?</style>",
+          "portuguese": "<style=\"Prompt\">O que você aperta?</style>",
+          "chinese": "<style=\"Prompt\">按哪个？</style>"
+        },
+        {
+          "english": "<style=\"Prompt\">What do you pull?</style>",
+          "french": "<style=\"Prompt\">Où l'orientez-vous ?</style>",
+          "german": "<style=\"Prompt\">Woran ziehst du?</style>",
+          "russian": "<style=\"Prompt\">Что потянете?</style>",
+          "portuguese": "<style=\"Prompt\">Para qual direção você move?</style>",
+          "chinese": "<style=\"Prompt\">拉哪个？</style>"
+        },
+        {
+          "english": "<style=\"Prompt\">Which direction do you shift the rod to?</style>",
+          "french": "<style=\"Prompt\">Dans quelle direction souhaitez-vous orienter la tige ?</style>",
+          "german": "<style=\"Prompt\">In welche Richtung bewegst du den Knüppel?</style>",
+          "russian": "<style=\"Prompt\">В какую сторону наклонить ручку?</style>",
+          "portuguese": "<style=\"Prompt\">Em qual direção você move o bastão?</style>",
+          "chinese": "<style=\"Prompt\">你想朝哪个方向移动操纵杆？</style>"
+        },
+        {
+          "english": "Before any logical thought can form, a blinding flash of light knocks you back. What's left behind is a polished, black orb, not unlike the Pyre itself.</style>",
+          "french": "Sans vous laisser le temps de réfléchir, un éclair de lumière vous éblouit. Apparaît alors un orbe noir lisse, qui ne ressemble pas au Brasier.</style>",
+          "german": "Bevor du einen klaren Gedanken fassen kannst, wirst du von einem grellen Licht zurückgeworfen. Als du wieder aufblickst, siehst du eine glatte, schwarze Kugel, nicht unähnlich der Höllenglut selbst.</style>",
+          "russian": "Прежде чем вам удается сформировать логичную мысль, вас сбивает с ног ослепительная вспышка. Придя в себя, вы обнаруживаете полированную черную сферу, которая до боли похожа на Пекло.</style>",
+          "portuguese": "Antes mesmo de um pensamento lógico se formar, um clarão cegante de luz te derruba. Um orbe preto e polido é deixado para trás, parecido com a própria Pira.</style>",
+          "chinese": "你还没来得及想出合理的解释，一道刺眼的闪光将你逼退。留下了一个磨光的黑色球体，和薪火本身有些相似。</style>"
+        },
+        {
+          "english": "But as the metal arms link, the train starts to shudder. No, your <i><style=\"Keyword\">Pyre</style></i> starts to rumble. Perhaps in recognition?",
+          "french": "Mais alors que les bras métalliques se rejoignent, le train se met à vaciller. Non, votre <i><style=\"Keyword\">Brasier</style></i> commence à s'agiter. Comme pour y répondre ?",
+          "german": "Sobald die Metallarme ineinandergreifen, scheint der Zug zu erzittern. Nein, es ist die <i><style=\"Keyword\">Höllenglut</style></i>, die erzittert. Möglicherweise in Anerkennung ...?",
+          "russian": "Но, когда металлические руки соединяются, поезд начинает дрожать. Нет, ваше <i><style=\"Keyword\">Пекло</style></i> начинает бурлить. Возможно, оно чует что-то знакомое?",
+          "portuguese": "Mas, assim que os braços metálicos se unem, o trem começa a ressoar. Não, sua <i><style=\"Keyword\">Pira</style></i> começa a ressoar. Talvez em reconhecimento?",
+          "chinese": "但随着金属臂连接在一起，火车开始抖动。不，是你的<i><style=\"Keyword\">薪火</style></i>开始轰鸣。也许是认可你了？"
+        },
+        {
+          "english": "Near the opening of the train, a metal control board stands relatively untouched. Clean, even. Strange.",
+          "french": "Près de l'entrée du train, un tableau de commande métallique semble intact. Curieux...",
+          "german": "In der Nähe des Zuges befindet sich ein kleines Steuerpult aus Metall, das nicht nur intakt aussieht, sondern fast schon sauber. Seltsam.",
+          "russian": "В начале поезда вы обнаруживаете относительно целую, даже чистую металлическую панель управления. Странно.",
+          "portuguese": "Próximo à entrada do trem, um painel de controle metálico parece relativamente pouco usado. Limpo, até. Estranho.",
+          "chinese": "在火车的开口处附近，有一块相对完好的金属仪表板。甚至还挺干净的。真奇怪。"
+        },
+        {
+          "english": "When you move towards it, the board whirs to life and a single button with a diamond icon flashes at you.</style>",
+          "french": "En vous approchant, le panneau s'allume et un bouton avec une icône de diamant commence à clignoter.</style>",
+          "german": "Als du dich auf das Pult zubewegst, erwacht es zum Leben und ein Knopf mit einem Diamantsymbol leuchtet auf.</style>",
+          "russian": "Когда вы подходите ближе, панель оживает, и на ней загорается единственная кнопка с изображением алмаза.</style>",
+          "portuguese": "Quado você avança em sua direção, o painel zune de volta à vida e um único botão com um ícone de diamante lampeja para você.</style>",
+          "chinese": "你向其靠近时，仪表板一下子运转起来，一个带有钻石图案的按钮朝你闪闪发光。</style>"
+        }
+      ],
+      "choice_texts": [
+        {
+          "choice": "Accept",
+          "texts": {
+            "english": "Press the button.",
+            "french": "Appuyez sur le bouton.",
+            "german": "Drücke den Knopf.",
+            "russian": "Нажмите кнопку.",
+            "portuguese": "Pressione o botão.",
+            "chinese": "按按钮。"
+          },
+          "preview_obtain_texts": {
+            "english": "Build a card.",
+            "french": "Créez une carte.",
+            "german": "Erschaffe eine Karte.",
+            "russian": "Построить карту.",
+            "portuguese": "Criar uma carta.",
+            "chinese": "打造一张卡牌。"
+          }
+        },
+        {
+          "choice": "Bonus_Upgrade0",
+          "texts": {
+            "english": "The symbols that have something to do with Space.",
+            "french": "Les symboles liés à l'espace.",
+            "german": "Die Symbole, die mit Raum zusammenhängen.",
+            "russian": "Символы, которые связаны с пространством.",
+            "portuguese": "Os símbolos que têm algo a ver com o Espaço.",
+            "chinese": "与空间有关的符号。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create an effect that increases [capacity].",
+            "french": "Créez un effet qui augmente [capacity].",
+            "german": "Erschaffe einen Effekt, der [capacity] erhöht.",
+            "russian": "Создайте эффект, который увеличивает [capacity].",
+            "portuguese": "Criar um efeito que aumenta [capacity].",
+            "chinese": "产生一种增加[capacity]的效果。"
+          }
+        },
+        {
+          "choice": "Bonus_Upgrade1",
+          "texts": {
+            "english": "The symbols having to do with Power.",
+            "french": "Les symboles liés à la puissance.",
+            "german": "Die Symbole, die mit Macht zusammenhängen.",
+            "russian": "Символы, которые связаны с мощью.",
+            "portuguese": "Os símbolos que têm a ver com Poder.",
+            "chinese": "与力量有关的符号。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create an effect that increases <b>Card Draw</b>.",
+            "french": "Créez un effet qui augmente le <b>tirage de carte</b>.",
+            "german": "Erschaffe einen Effekt, der <b>Kartenziehen</b> erhöht.",
+            "russian": "Создайте эффект, который увеличивает <b>количество получаемых карт</b>.",
+            "portuguese": "Criar um efeito que aumenta <b>Compra de Cartas</b>.",
+            "chinese": "产生一种增加<b>抽牌数</b>的效果。"
+          }
+        },
+        {
+          "choice": "Bonus_Upgrade2",
+          "texts": {
+            "english": "The symbols having to do with Gold.",
+            "french": "Les symboles liés à l'or.",
+            "german": "Die Symbole, die mit Gold zusammenhängen.",
+            "russian": "Символы, которые связаны с золотом.",
+            "portuguese": "Os símbolos que têm a ver com Ouro.",
+            "chinese": "与金币有关的符号。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create an effect that increases [coin].",
+            "french": "Créez un effet qui augmente [coin].",
+            "german": "Erschaffe einen Effekt, der [coin] erhöht.",
+            "russian": "Создайте эффект, который увеличивает [coin].",
+            "portuguese": "Criar um efeito que aumenta [coin].",
+            "chinese": "产生一种增加[coin]的效果。"
+          }
+        },
+        {
+          "choice": "LeaveCard",
+          "texts": {
+            "english": "Back away warily.",
+            "french": "Reculer prudemment.",
+            "german": "Wende dich vorsichtig ab.",
+            "russian": "Осторожно уйти.",
+            "portuguese": "Afaste-se com cautela.",
+            "chinese": "小心地退后。"
+          },
+          "preview_obtain_texts": {
+            "english": "Do Nothing.",
+            "french": "Ne faites rien.",
+            "german": "Tue nichts.",
+            "russian": "Ничего не делать.",
+            "portuguese": "Não fazer nada.",
+            "chinese": "什么都不做。"
+          }
+        },
+        {
+          "choice": "Movement_Upgrade0",
+          "texts": {
+            "english": "Forward.",
+            "french": "En avant.",
+            "german": "Vorwärts.",
+            "russian": "Вперед.",
+            "portuguese": "Para frente.",
+            "chinese": "前。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [advance] effect.",
+            "french": "Créez un effet [advance].",
+            "german": "Erschaffe einen [advance]-Effekt.",
+            "russian": "Создайте эффект [advance].",
+            "portuguese": "Criar um efeito de [advance].",
+            "chinese": "产生一种[advance]效果。"
+          }
+        },
+        {
+          "choice": "Movement_Upgrade1",
+          "texts": {
+            "english": "Backward.",
+            "french": "En arrière.",
+            "german": "Rückwärts.",
+            "russian": "Назад.",
+            "portuguese": "Para trás.",
+            "chinese": "后。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [retreat] effect.",
+            "french": "Créez un effet [retreat].",
+            "german": "Erschaffe einen [retreat]-Effekt.",
+            "russian": "Создайте эффект [retreat].",
+            "portuguese": "Criar um efeito de [retreat].",
+            "chinese": "产生一种[retreat]效果。"
+          }
+        },
+        {
+          "choice": "Movement_Upgrade2",
+          "texts": {
+            "english": "Down.",
+            "french": "Bas.",
+            "german": "Unten.",
+            "russian": "Вниз.",
+            "portuguese": "Para baixo.",
+            "chinese": "下。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [descend] effect.",
+            "french": "Créez un effet [descend].",
+            "german": "Erschaffe einen [descend]-Effekt.",
+            "russian": "Создайте эффект [descend].",
+            "portuguese": "Criar um efeito de [descend].",
+            "chinese": "产生一种[descend]效果。"
+          }
+        },
+        {
+          "choice": "Movement_Upgrade3",
+          "texts": {
+            "english": "Up.",
+            "french": "Haut.",
+            "german": "Oben.",
+            "russian": "Вверх.",
+            "portuguese": "Para cima.",
+            "chinese": "上。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [ascend] effect.",
+            "french": "Créez un effet [ascend].",
+            "german": "Erschaffe einen [ascend]-Effekt.",
+            "russian": "Создайте эффект [ascend].",
+            "portuguese": "Criar um efeito de [ascend].",
+            "chinese": "产生一种[ascend]效果。"
+          }
+        },
+        {
+          "choice": "Movement_Upgrade4",
+          "texts": {
+            "english": "Spin it clockwise."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a <b>Shuffle</b> effect for friendly units."
+          }
+        },
+        {
+          "choice": "Movement_Upgrade5",
+          "texts": {
+            "english": "Spin it counter-clockwise."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a <b>Shuffle</b> effect for enemy units."
+          }
+        },
+        {
+          "choice": "Primary_Upgrade0",
+          "texts": {
+            "english": "The collection of jagged lines.",
+            "french": "La série de lignes irrégulières.",
+            "german": "Die Ansammlung gezackter Linien.",
+            "russian": "Куча неровных линий.",
+            "portuguese": "A coleção de linhas denteadas.",
+            "chinese": "一系列锯齿状线条。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a <b>Damage</b> effect.",
+            "french": "Créez un effet <b>Dégâts</b>.",
+            "german": "Erschaffe einen <b>Schaden</b>-Effekt.",
+            "russian": "Создайте эффект <b>урона</b>.",
+            "portuguese": "Criar um efeito de <b>Dano</b>.",
+            "chinese": "产生一种<b>伤害</b>效果。"
+          }
+        },
+        {
+          "choice": "Primary_Upgrade1",
+          "texts": {
+            "english": "The smooth waves.",
+            "french": "Les vagues régulières.",
+            "german": "Die glatten Wellen.",
+            "russian": "Гладкие волны.",
+            "portuguese": "As ondas suaves.",
+            "chinese": "平静的波浪。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a <b>Heal</b> effect.",
+            "french": "Créez un effet <b>Soins</b>.",
+            "german": "Erschaffe einen <b>Heilen</b>-Effekt.",
+            "russian": "Создайте эффект <b>лечения</b>.",
+            "portuguese": "Criar um efeito de <b>Cura</b>.",
+            "chinese": "产生一种<b>治疗</b>效果。"
+          }
+        },
+        {
+          "choice": "Primary_Upgrade2",
+          "texts": {
+            "description": "TODO UPDATE",
+            "english": "The red upward pointing arrow.",
+            "french": "La flèche qui pointe vers le haut.",
+            "german": "Der nach oben zeigende Pfeil.",
+            "russian": "Восходящая стрелка.",
+            "portuguese": "A seta ascendente.",
+            "chinese": "向上指的箭头。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a <b>Buff</b> effect.",
+            "french": "Créez un effet <b>Bonus</b>.",
+            "german": "Erschaffe einen <b>Buff</b>-Effekt.",
+            "russian": "Создайте эффект <b>усиления</b>.",
+            "portuguese": "Criar um efeito de <b>Buff</b>.",
+            "chinese": "产生一种<b>增益</b>效果。"
+          }
+        },
+        {
+          "choice": "Primary_Upgrade3",
+          "texts": {
+            "description": "TODO UPDATE",
+            "english": "The green upward pointing arrow."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a <b>Health Up</b> effect."
+          }
+        },
+        {
+          "choice": "Status_Upgrade0",
+          "texts": {
+            "english": "The Shield.",
+            "french": "Le bouclier.",
+            "german": "Der Schild.",
+            "russian": "Щит.",
+            "portuguese": "O escudo.",
+            "chinese": "坚盾。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create an [armor] effect.",
+            "french": "Créez un effet <b>Armure</b>.",
+            "german": "Erschaffe einen <b>Rüstung</b>-Effekt.",
+            "russian": "Создайте эффект <b>брони</b>.",
+            "portuguese": "Criar um efeito de <b>Armadura</b>.",
+            "chinese": "产生一种[armor]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade1",
+          "texts": {
+            "english": "The Life.",
+            "french": "La vie.",
+            "german": "Das Leben.",
+            "russian": "Жизнь.",
+            "portuguese": "A vida.",
+            "chinese": "生命。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [regen] effect.",
+            "french": "Créez un effet [regen].",
+            "german": "Erschaffe einen [regen]-Effekt.",
+            "russian": "Создайте эффект [regen].",
+            "portuguese": "Criar um efeito de [regen].",
+            "chinese": "产生一种[regen]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade10",
+          "texts": {
+            "english": "The Explosion"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [unstable] effect.",
+            "french": "Créez un effet [unstable].",
+            "german": "Erschaffe einen [unstable]-Effekt.",
+            "russian": "Создайте эффект [unstable].",
+            "portuguese": "Criar um efeito de [unstable].",
+            "chinese": "产生一种[unstable]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade11",
+          "texts": {
+            "english": "The Angel."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [valor] effect.",
+            "french": "Créez un effet [valor].",
+            "german": "Erschaffe einen [valor]-Effekt.",
+            "russian": "Создайте эффект [valor].",
+            "portuguese": "Criar um efeito de [valor].",
+            "chinese": "产生一种[valor]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade12",
+          "texts": {
+            "english": "The Coin."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [avarice] effect.",
+            "french": "Créez un effet [avarice].",
+            "german": "Erschaffe einen [avarice]-Effekt.",
+            "russian": "Создайте эффект [avarice].",
+            "portuguese": "Criar um efeito de [avarice].",
+            "chinese": "产生一种[avarice]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade2",
+          "texts": {
+            "english": "The Sludge.",
+            "french": "Le visqueux.",
+            "german": "Der Schlamm.",
+            "russian": "Слизь.",
+            "portuguese": "A gosma.",
+            "chinese": "蜡油。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [sap] effect.",
+            "french": "Créez un effet [sap].",
+            "german": "Erschaffe einen [sap]-Effekt.",
+            "russian": "Создайте эффект [sap].",
+            "portuguese": "Criar um efeito de [sap].",
+            "chinese": "产生一种[sap]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade3",
+          "texts": {
+            "english": "The Snow.",
+            "french": "La neige.",
+            "german": "Der Schnee.",
+            "russian": "Снег.",
+            "portuguese": "A neve.",
+            "chinese": "雪花。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [frostbite] effect.",
+            "french": "Créez un effet [frostbite].",
+            "german": "Erschaffe einen [frostbite]-Effekt.",
+            "russian": "Создайте эффект [frostbite].",
+            "portuguese": "Criar um efeito de [frostbite].",
+            "chinese": "产生一种[frostbite]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade4",
+          "texts": {
+            "english": "The Spike.",
+            "french": "Le crampon.",
+            "german": "Der Nagel.",
+            "russian": "Шип.",
+            "portuguese": "O espinho.",
+            "chinese": "尖刺。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [spikes] effect.",
+            "french": "Créez un effet [spikes].",
+            "german": "Erschaffe einen [spikes]-Effekt.",
+            "russian": "Создайте эффект [spikes].",
+            "portuguese": "Criar um efeito de [spikes].",
+            "chinese": "产生一种[spikes]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade5",
+          "texts": {
+            "english": "The Flame.",
+            "french": "La flamme.",
+            "german": "Die Flamme.",
+            "russian": "Огонь.",
+            "portuguese": "A chama.",
+            "chinese": "火焰。"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [rage] effect.",
+            "french": "Créez un effet [rage].",
+            "german": "Erschaffe einen [rage]-Effekt.",
+            "russian": "Создайте эффект [rage].",
+            "portuguese": "Criar um efeito de [rage].",
+            "chinese": "产生一种[rage]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade6",
+          "texts": {
+            "english": "The Gear."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [burst] effect.",
+            "french": "Créez un effet [burst].",
+            "german": "Erschaffe einen [burst]-Effekt.",
+            "russian": "Создайте эффект [burst].",
+            "portuguese": "Criar um efeito de [burst].",
+            "chinese": "产生一种[burst]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade7",
+          "texts": {
+            "english": "The Magic."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [conduit] effect.",
+            "french": "Créez un effet [conduit].",
+            "german": "Erschaffe einen [conduit]-Effekt.",
+            "russian": "Создайте эффект [conduit].",
+            "portuguese": "Criar um efeito de [conduit].",
+            "chinese": "产生一种[conduit]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade8",
+          "texts": {
+            "english": "The Mushroom"
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [decay] effect.",
+            "french": "Créez un effet [decay].",
+            "german": "Erschaffe einen [decay]-Effekt.",
+            "russian": "Создайте эффект [decay].",
+            "portuguese": "Criar um efeito de [decay].",
+            "chinese": "产生一种[decay]效果。"
+          }
+        },
+        {
+          "choice": "Status_Upgrade9",
+          "texts": {
+            "english": "The Volcano."
+          },
+          "preview_obtain_texts": {
+            "english": "Create a [pyregel] effect.",
+            "french": "Créez un effet [pyregel].",
+            "german": "Erschaffe einen [pyregel]-Effekt.",
+            "russian": "Создайте эффект [pyregel].",
+            "portuguese": "Criar um efeito de [pyregel].",
+            "chinese": "产生一种[pyregel]效果。"
+          }
+        },
+        {
+          "choice": "TakeCard",
+          "texts": {
+            "english": "Take the orb.",
+            "french": "Prendre l'orbe.",
+            "german": "Nimm die Kugel.",
+            "russian": "Взять сферу.",
+            "portuguese": "Pegar o orbe.",
+            "chinese": "拿走球体。"
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.",
+            "french": "Obtenez {0}.",
+            "german": "Belohnung: {0}.",
+            "russian": "Получите: «{0}».",
+            "portuguese": "Receba {0}.",
+            "chinese": "获得{0}。",
+            "spanish": "Obtienes {0}.",
+            "chinese_traditional": "獲得{0}。",
+            "korean": "{0}를 획득합니다.",
+            "japanese": "{0}を得る。"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "reward",
+              "references": [
+                "@BuildACardReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "nothing",
+          "texts": {
+            "english": "Leave it be.",
+            "french": "Laisser.",
+            "german": "Lasse es unberührt.",
+            "russian": "Оставить в покое.",
+            "portuguese": "Deixar para lá.",
+            "chinese": "不理会它。"
+          }
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "BuildACardReward",
+      "type": "custom_class",
+      "custom_class": "@BuildACardRewardData",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [
+        100
+      ]
+    }
+  ]
+}

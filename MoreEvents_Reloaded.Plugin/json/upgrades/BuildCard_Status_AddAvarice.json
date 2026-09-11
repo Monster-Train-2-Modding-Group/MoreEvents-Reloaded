@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddAvarice",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddAvarice.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddAvarice.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "avarice",
+          "count": 5
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddAvarice.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [avarice] [effect0.status0.power].",
+        "french": "Confère [avarice] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [avarice] an.",
+        "russian": "Накладывает [avarice] х[effect0.status0.power].",
+        "portuguese": "Concede [avarice] [effect0.status0.power].",
+        "chinese": "获得[avarice] [effect0.status0.power]。",
+        "spanish": "Añade [avarice] [effect0.status0.power].",
+        "chinese_traditional": "施加[avarice][effect0.status0.power]。",
+        "korean": "[avarice] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[avarice] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddAvarice.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

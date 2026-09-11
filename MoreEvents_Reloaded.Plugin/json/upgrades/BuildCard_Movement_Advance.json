@@ -1,0 +1,42 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_Advance",
+      "card_trigger_upgrades": [
+        "@BuildCard_Advance.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_Advance.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_Advance.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "[advance].",
+        "french": "[advance].",
+        "german": "[advance]:",
+        "russian": "[advance].",
+        "portuguese": "[advance].",
+        "chinese": "[advance]。",
+        "spanish": "[advance].",
+        "chinese_traditional": "[advance]。",
+        "korean": "[advance].",
+        "japanese": "[advance]."
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_Advance.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddArmor",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddArmor.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddArmor.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 10
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddArmor.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [armor] [effect0.status0.power].",
+        "french": "Confère [armor] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [armor] an.",
+        "russian": "Накладывает [armor] х[effect0.status0.power].",
+        "portuguese": "Concede [armor] [effect0.status0.power].",
+        "chinese": "获得[armor] [effect0.status0.power]。",
+        "spanish": "Añade [armor] [effect0.status0.power].",
+        "chinese_traditional": "施加[armor][effect0.status0.power]。",
+        "korean": "[armor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[armor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddArmor.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

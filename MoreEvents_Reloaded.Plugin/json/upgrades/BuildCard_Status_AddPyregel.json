@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddPyregel",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddPyregel.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddPyregel.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "pyregel",
+          "count": 2
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddPyregel.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [pyregel] [effect0.status0.power].",
+        "french": "Confère [pyregel] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [pyregel] an.",
+        "russian": "Накладывает [pyregel] х[effect0.status0.power].",
+        "portuguese": "Concede [pyregel] [effect0.status0.power].",
+        "chinese": "获得[pyregel] [effect0.status0.power]。",
+        "spanish": "Añade [pyregel] [effect0.status0.power].",
+        "chinese_traditional": "施加[pyregel][effect0.status0.power]。",
+        "korean": "[pyregel] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[pyregel] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddPyregel.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

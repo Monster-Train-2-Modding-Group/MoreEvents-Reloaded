@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_Damage",
+      "card_trigger_upgrades": [
+        "@BuildCard_Damage.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_Damage.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectDamage",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "should_test": false,
+      "param_int": 20
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_Damage.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage.",
+        "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Verursache [effect0.power] Schaden.",
+        "russian": "Наносит [effect0.power] урона.",
+        "portuguese": "Causa [effect0.power] de dano.",
+        "chinese": "造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño.",
+        "chinese_traditional": "造成[effect0.power]點傷害。",
+        "korean": "[effect0.power]의 피해를 입힙니다.",
+        "japanese": "[effect0.power]のダメージを与える。"
+      },
+      "effects": [
+        "@BuildCard_Damage.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

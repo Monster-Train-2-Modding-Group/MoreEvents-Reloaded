@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_Heal",
+      "card_trigger_upgrades": [
+        "@BuildCard_Heal.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_Heal.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectHeal",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "should_test": false,
+      "param_int": 20
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_Heal.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Restore [effect0.power] health.",
+        "french": "Restaure <nobr>[effect0.power] PV.</nobr>",
+        "german": "Stelle [effect0.power] Gesundheit wieder her.",
+        "russian": "Восстанавливает [effect0.power] здоровья.",
+        "portuguese": "Restaura [effect0.power] de vida.",
+        "chinese": "恢复 [effect0.power] 点生命值。",
+        "spanish": "Restaura [effect0.power] de salud.",
+        "chinese_traditional": "恢復[effect0.power]點生命值。",
+        "korean": "체력을 [effect0.power]만큼 회복합니다.",
+        "japanese": "体力を[effect0.power]回復する。"
+      },
+      "effects": [
+        "@BuildCard_Heal.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

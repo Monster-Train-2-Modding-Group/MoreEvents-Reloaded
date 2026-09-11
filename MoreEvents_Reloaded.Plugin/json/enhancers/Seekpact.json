@@ -1,0 +1,96 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "DivineAltarSeekPact",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "english": "Seek Pact"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember]</nobr> and gain [inherent] and [deployable].",
+        "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember]</nobr> et gagne [inherent] et [deployable].",
+        "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember]</nobr> kostet, und erhalte [inherent] und [deployable].",
+        "russian": "Снижает цену чар на <nobr>-[effect0.upgrade.costreduction][ember]</nobr> и дает [inherent] и [deployable].",
+        "portuguese": "Melhora um feitiço para custar <nobr>-[effect0.upgrade.costreduction][ember]</nobr> e recebe [inherent] e [deployable].",
+        "chinese": "升级法术，使其消耗降低 <nobr>[effect0.upgrade.costreduction][ember]</nobr>，并获得 [inherent] 和 [deployable]。。",
+        "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember]</nobr> y añade [inherent] y [deployable].",
+        "chinese_traditional": "升級一個法術，使其費用減少<nobr>[effect0.upgrade.costreduction][ember]</nobr>，並獲得[inherent]和[deployable]。",
+        "korean": "주문을 강화하면 비용이 <nobr>-[effect0.upgrade.costreduction][ember]</nobr>만큼 감소하며, [inherent] 및 [deployable]를 부여합니다.",
+        "japanese": "呪文のアップグレード：<nobr>-[effect0.upgrade.costreduction][ember]</nobr>、[inherent]、および[deployable]を獲得する。"
+      },
+      "icon": "@Seekstone",
+      "relic_effects": [
+        "@DivineAltarSeekPact.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DivineAltarSeekPact.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@TraitInherentDeployableSpellReduceCost",
+      "param_min_int": 1,
+      "param_max_int": 99
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TraitInherentDeployableSpellReduceCost",
+      "titles": {
+        "english": "Seek Pact"
+      },
+      "descriptions": {
+        "english": "-[costreduction][ember] and gain [inherent] and [deployable].",
+        "french": "-[costreduction][ember] et octroie [inherent] et [deployable].",
+        "german": "-[costreduction][ember] und erhalte [inherent] und [deployable].",
+        "russian": "-[costreduction][ember] и дается [inherent] и [deployable].",
+        "portuguese": "-[costreduction][ember] e recebe [inherent] e [deployable].",
+        "chinese": "-[costreduction][ember] 并获得 [inherent] [deployable]。",
+        "spanish": "-[costreduction][ember] y añade [inherent] y [deployable].",
+        "chinese_traditional": "-[costreduction][ember]並獲得[inherent] [deployable]。",
+        "korean": "-[costreduction][ember] 및 [inherent] [deployable] 효과를 획득합니다.",
+        "japanese": "-[costreduction][ember]、[inherent] [deployable]を得る。"
+      },
+      "icon": "@Seekstone",
+      "hide_icon_on_card": false,
+      "trait_upgrades": [
+        "@DivineAltarSeekPact.effects0.paramCardUpgradeData.traitDataUpgrades0",
+        "@DivineAltarSeekPact.effects0.paramCardUpgradeData.traitDataUpgrades1"
+      ],
+      "filters": [
+        "OnlySpells"
+      ],
+      "cost_reduction": 1,
+      "x_cost_reduction": 1
+    }
+  ],
+  "traits": [
+    {
+      "id": "DivineAltarSeekPact.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitIntrinsicState"
+    },
+    {
+      "id": "DivineAltarSeekPact.effects0.paramCardUpgradeData.traitDataUpgrades1",
+      "name": "CardTraitDrawInDeploymentPhase"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Seekstone",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/Enhancers/SeekStone.png"
+      }
+    }
+  ]
+}

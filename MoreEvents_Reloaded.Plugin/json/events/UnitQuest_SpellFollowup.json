@@ -13,6 +13,10 @@
         "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_AbandonedTrainyard.prefab",
         "asset_guid": "39ea0f9b15258a34ebb4e43ae508a264"
       },
+      "soul_savior_prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_AbandonedTrainyard.prefab",
+        "asset_guid": "1b2de5be0fdafc14bbf36928bb948a5a"
+      },
       "texts": [
         {
           "english": "“So here, just as promised.”</style>",

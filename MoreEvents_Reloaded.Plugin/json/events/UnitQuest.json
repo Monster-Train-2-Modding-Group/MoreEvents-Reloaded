@@ -5,15 +5,20 @@
       "id": "UnitQuest",
       "knot_name": "UnitQuest",
       "num_runs_completed_to_see": 7,
-      "priority_ticket_count": 25,
+      "priority_ticket_count": 20,
       "num_classes_needed_to_show": 1,
       "min_distance_allowed": 3,
       "max_distance_allowed": 3,
       "story_data": "assets/data/UnitQuest.ink.json",
       "is_followup_event": false,
+      "design_contributor": "MT1",
       "prefab": {
         "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_AbandonedTrainyard.prefab",
         "asset_guid": "39ea0f9b15258a34ebb4e43ae508a264"
+      },
+      "soul_savior_prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_AbandonedTrainyard.prefab",
+        "asset_guid": "1b2de5be0fdafc14bbf36928bb948a5a"
       },
       "texts": [
         {

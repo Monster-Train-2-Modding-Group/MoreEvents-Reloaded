@@ -1,0 +1,391 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "NexusSpikeTarget",
+      "names": {
+        "english": "Nexus Spike",
+        "french": "Crampon de Nexus",
+        "german": "Nexusnagel",
+        "russian": "Костыль Нексуса",
+        "portuguese": "Espinho de Conexão",
+        "chinese": "联结道钉"
+      },
+      "descriptions": {
+        "english": "Play the contained spell cards [effect0.unboxedcardname]",
+        "french": "[effect0.unboxedcardname]",
+        "german": "[effect0.unboxedcardname]",
+        "russian": "[effect0.unboxedcardname]",
+        "portuguese": "[effect0.unboxedcardname]",
+        "chinese": "[effect0.unboxedcardname]",
+        "spanish": "[effect0.unboxedcardname]",
+        "chinese_traditional": "[effect0.unboxedcardname]",
+        "korean": "[effect0.unboxedcardname]",
+        "japanese": "[effect0.unboxedcardname]"
+      },
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "rare",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [ "@NexusSpikeNull" ],
+      "traits": [ "@CardTraitMergedCard" ],
+      "card_art": "@CardArt_Spell_DivineFragments"
+    },
+    {
+      "id": "NexusSpikeTargetless",
+      "names": {
+        "english": "Nexus Spike",
+        "french": "Crampon de Nexus",
+        "german": "Nexusnagel",
+        "russian": "Костыль Нексуса",
+        "portuguese": "Espinho de Conexão",
+        "chinese": "联结道钉"
+      },
+      "descriptions": {
+        "english": "Play the contained spell cards [effect0.unboxedcardname]",
+        "french": "[effect0.unboxedcardname]",
+        "german": "[effect0.unboxedcardname]",
+        "russian": "[effect0.unboxedcardname]",
+        "portuguese": "[effect0.unboxedcardname]",
+        "chinese": "[effect0.unboxedcardname]",
+        "spanish": "[effect0.unboxedcardname]",
+        "chinese_traditional": "[effect0.unboxedcardname]",
+        "korean": "[effect0.unboxedcardname]",
+        "japanese": "[effect0.unboxedcardname]"
+      },
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "rare",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [ "@NexusSpike2Null" ],
+      "traits": [ "@CardTraitMergedCard" ],
+      "card_art": "@CardArt_Spell_DivineFragments",
+      "linked_mastery_card": "@NexusSpike"
+    },
+    {
+      "id": "NexusSpikeXTarget",
+      "names": {
+        "english": "Nexus Spike",
+        "french": "Crampon de Nexus",
+        "german": "Nexusnagel",
+        "russian": "Костыль Нексуса",
+        "portuguese": "Espinho de Conexão",
+        "chinese": "联结道钉"
+      },
+      "descriptions": {
+        "english": "Play the contained spell cards [effect0.unboxedcardname]",
+        "french": "[effect0.unboxedcardname]",
+        "german": "[effect0.unboxedcardname]",
+        "russian": "[effect0.unboxedcardname]",
+        "portuguese": "[effect0.unboxedcardname]",
+        "chinese": "[effect0.unboxedcardname]",
+        "spanish": "[effect0.unboxedcardname]",
+        "chinese_traditional": "[effect0.unboxedcardname]",
+        "korean": "[effect0.unboxedcardname]",
+        "japanese": "[effect0.unboxedcardname]"
+      },
+      "cost_type": "x",
+      "card_type": "spell",
+      "rarity": "rare",
+      "targets_room": true,
+      "targetless": false,
+      "effects": [ "@NexusSpikeNull" ],
+      "traits": [ "@CardTraitMergedCard" ],
+      "card_art": "@CardArt_Spell_DivineFragments",
+      "linked_mastery_card": "@NexusSpike"
+    },
+    {
+      "id": "NexusSpikeXTargetless",
+      "names": {
+        "english": "Nexus Spike",
+        "french": "Crampon de Nexus",
+        "german": "Nexusnagel",
+        "russian": "Костыль Нексуса",
+        "portuguese": "Espinho de Conexão",
+        "chinese": "联结道钉"
+      },
+      "descriptions": {
+        "english": "Play the contained spell cards [effect0.unboxedcardname]",
+        "french": "[effect0.unboxedcardname]",
+        "german": "[effect0.unboxedcardname]",
+        "russian": "[effect0.unboxedcardname]",
+        "portuguese": "[effect0.unboxedcardname]",
+        "chinese": "[effect0.unboxedcardname]",
+        "spanish": "[effect0.unboxedcardname]",
+        "chinese_traditional": "[effect0.unboxedcardname]",
+        "korean": "[effect0.unboxedcardname]",
+        "japanese": "[effect0.unboxedcardname]"
+      },
+      "cost_type": "x",
+      "card_type": "spell",
+      "rarity": "rare",
+      "targets_room": true,
+      "targetless": true,
+      "effects": [ "@NexusSpike2Null" ],
+      "traits": [ "@CardTraitMergedCard" ],
+      "card_art": "@CardArt_Spell_DivineFragments",
+      "linked_mastery_card": "@NexusSpike"
+    }
+  ],
+  "traits": [
+    {
+      "id": "CardTraitMergedCard",
+      "name": "@CardTraitMergedCard"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "PlayReservePositiveMergeCardsUpgrade",
+      "card_trigger_upgrades": [
+        "@PlayReserveMergeCards"
+      ]
+    },
+    {
+      "id": "PlayReserveNegativeMergeCardsUpgrade",
+      "card_trigger_upgrades": [
+        "@PlayReserveNevativeMergeCards"
+      ]
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "PlayReserveMergeCards",
+      "trigger": "on_unplayed_positive",
+      "trigger_keyword_card_text_suppressed": true,
+      "effects": [
+        "@PlayCardTriggersOfType"
+      ]
+    },
+    {
+      "id": "PlayReserveNegativeMergeCards",
+      "trigger": "on_unplayed_negative",
+      "trigger_keyword_card_text_suppressed": true,
+      "effects": [
+        "@PlayCardTriggersOfType"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "NexusSpikeNull",
+      "name": "@CardEffectPlayBoxedCards",
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    },
+    {
+      "id": "NexusSpike2Null",
+      "name": "@CardEffectPlayBoxedCards",
+      "target_mode": "room",
+      "target_team": "both"
+    },
+    {
+      "id": "PlayCardTriggersOfType",
+      "name": "@CardEffectPlayBoxedCardTriggers"
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_DivineFragments",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "@SPL_DivineFragments_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "@SPL_DivineFragments_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "@FX_Aura",
+              "motion_texture": "@FX_Flow_ConeRight_45",
+              "mask_texture": "@MSK_DivineFragments_01",
+              "tint": {
+                "r": 0.7075471,
+                "g": 0.05673726,
+                "b": 0.677276969,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 18.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_DivineFragments_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_DivineFragments_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_DivineFragments_04",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_DivineFragments_05",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "@SPL_DivineFragments_06",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "@SPL_DivineFragments_07",
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Shards_01",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.11,
+                "y": 0.065,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Shards_02",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": -0.045,
+                "y": -0.035,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Shards_03",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": 0.045,
+                "y": 0.11,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Shards_04",
+              "layers": [
+                4
+              ],
+              "position": {
+                "x": 0.025,
+                "y": 0.01,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Shards_05",
+              "layers": [
+                5
+              ],
+              "position": {
+                "x": 0.045,
+                "y": 0.04,
+                "z": 0.0
+              }
+            }
+          ],
+          "animated_fields": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FX_Flow_ConeRight_45",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/FX_Flow_ConeRight_45.png"
+      }
+    },
+    {
+      "id": "MSK_DivineFragments_01",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/MSK_DivineFragments_01.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_01",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_01.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_03",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_03.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_02",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_02.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_04",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_04.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_05",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_05.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_06",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_06.png"
+      }
+    },
+    {
+      "id": "SPL_DivineFragments_07",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/NexusSpike/SPL_DivineFragments_07.png"
+      }
+    }
+  ]
+}

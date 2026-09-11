@@ -1,0 +1,48 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_AddConduit",
+      "card_trigger_upgrades": [
+        "@BuildCard_AddConduit.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_AddConduit.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 4
+        }
+      ],
+      "should_test": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_AddConduit.cardTriggerUpgrades0",
+      "descriptions": {
+        "english": "Apply [conduit] [effect0.status0.power].",
+        "french": "Confère [conduit] [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] [conduit] an.",
+        "russian": "Накладывает [conduit] х[effect0.status0.power].",
+        "portuguese": "Concede [conduit] [effect0.status0.power].",
+        "chinese": "获得[conduit] [effect0.status0.power]。",
+        "spanish": "Añade [conduit] [effect0.status0.power].",
+        "chinese_traditional": "施加[conduit][effect0.status0.power]。",
+        "korean": "[conduit] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[conduit] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_AddConduit.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

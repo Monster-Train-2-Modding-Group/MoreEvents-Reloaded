@@ -1,0 +1,339 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "events": [
+    {
+      "id": "DivineAltar",
+      "knot_name": "DivineAltar",
+      "num_runs_completed_to_see": 1,
+      "priority_ticket_count": 15,
+      "num_classes_needed_to_show": 1,
+      "min_distance_allowed": 3,
+      "max_distance_allowed": 8,
+      "story_data": "assets/data/DivineAltar.ink.json",
+      "is_followup_event": false,
+      "design_contributor": "Brandon",
+      "prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_DivineShards.prefab",
+        "asset_guid": "23f9dd03ce1cf4b4399ae37d31dd1424"
+      },
+      "soul_savior_prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_DivineShards.prefab",
+        "asset_guid": "9c1635d93174671438cf9c3020f62783"
+      },
+      "texts": [
+        {
+          "english": "<whisper>\"When the Divine Temples fell, their secrets did not vanish-they just scattered. This altar still remembers how to weave two souls into one, or forge raw divinity into a spell. The fire awaits\"</whisper></style>"
+        },
+        {
+          "english": "One form dissolves into brilliant, liquid embers that flow steadily across the floor conduits, pouring directly into the heart of the survivor."
+        },
+        {
+          "english": "The text flares blindingly, permanently rewritten by divine law."
+        },
+        {
+          "english": "<style=\"Body\">You place the spell upon the altar. Brass needles snap forward, etching liquid gold directly onto the spell as ancient temple power floods the parchment."
+        },
+        {
+          "english": "<style=\"Prompt\">Do you dare invoke its power?</style>"
+        },
+        {
+          "english": "<whisper>\"A cautious soul,\"</whisper> the voice sighs, fading into the cold chamber. <whisper>\"The altar waits, as it always has.\"</whisper></style>"
+        },
+        {
+          "english": "The remaining unit draws a sharp, resonant breath, its eyes now burning with a twin flame.</style>"
+        },
+        {
+          "english": "<style=\"Body\">You step away from the altar. The focus crystals dim to a dull embers, and the brass gears grind to a quiet halt."
+        },
+        {
+          "english": "<whisper>\"A covenant carved in fire,\"</whisper> the voice hums, fading into the chamber. <whisper>\"Speak the words, and let the heavens answer.\"</whisper></style>"
+        },
+        {
+          "english": "<style=\"Body\">The two units step onto the altar. Rings of oxidized metal grind into motion, aligning focus lenses overhead until a single lance of auric light pierces the chamber."
+        },
+        {
+          "english": "<style=\"Body\">Beyond the celestial archway lies a shattered ivory and brass chamber. At its center, an ancient Divine Altar <bigshake>roars</bigshake> to life, its focus crystals flaring with residual temple light."
+        },
+        {
+          "english": "A <mystical>mysterious whisper</mystical> echoes from within the chamber:"
+        }
+      ],
+      "choice_texts": [
+        {
+          "choice": "EngagePact",
+          "texts": {
+            "english": "Engage Pact"
+          },
+          "preview_obtain_texts": {
+            "description": "internal note {0} will be replaced by ultimately an empty string. Leave in its location.",
+            "english": "Fuse one unit's soul into another.{0}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@UnitSynthesisReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "PurgePact",
+          "texts": {
+            "english": "Place a spell on the altar of the void."
+          },
+          "preview_obtain_texts": {
+            "description": "internal note. from here and below {1} will be replaced by ultimately an empty string. Leave in its location.",
+            "english": "Get {0}.{1}",
+            "french": "Obtenez {0}.{1}",
+            "german": "Belohnung: {0}.{1}",
+            "russian": "Получите: «{0}».{1}",
+            "portuguese": "Receba {0}.{1}",
+            "chinese": "获得{0}。{1}",
+            "spanish": "Obtienes {0}.{1}",
+            "chinese_traditional": "獲得{0}。{1}",
+            "korean": "{0}를 획득합니다.{1}",
+            "japanese": "{0}を得る。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@DivineAltarPurgePact"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@PurgePactEnhancerReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "SeekPact",
+          "texts": {
+            "english": "Place a spell on the altar of seeking."
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.{1}",
+            "french": "Obtenez {0}.{1}",
+            "german": "Belohnung: {0}.{1}",
+            "russian": "Получите: «{0}».{1}",
+            "portuguese": "Receba {0}.{1}",
+            "chinese": "获得{0}。{1}",
+            "spanish": "Obtienes {0}.{1}",
+            "chinese_traditional": "獲得{0}。{1}",
+            "korean": "{0}를 획득합니다.{1}",
+            "japanese": "{0}を得る。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@DivineAltarSeekPact"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@SeekPactEnhancerReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "ThricePact",
+          "texts": {
+            "english": "Place a spell on the altar of multiplication."
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.{1}",
+            "french": "Obtenez {0}.{1}",
+            "german": "Belohnung: {0}.{1}",
+            "russian": "Получите: «{0}».{1}",
+            "portuguese": "Receba {0}.{1}",
+            "chinese": "获得{0}。{1}",
+            "spanish": "Obtienes {0}.{1}",
+            "chinese_traditional": "獲得{0}。{1}",
+            "korean": "{0}를 획득합니다.{1}",
+            "japanese": "{0}を得る。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@DivineAltarThricePact"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@ThricePactEnhancerReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "TruePact",
+          "texts": {
+            "english": "Place a spell on the altar of truth."
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.{1}",
+            "french": "Obtenez {0}.{1}",
+            "german": "Belohnung: {0}.{1}",
+            "russian": "Получите: «{0}».{1}",
+            "portuguese": "Receba {0}.{1}",
+            "chinese": "获得{0}。{1}",
+            "spanish": "Obtienes {0}.{1}",
+            "chinese_traditional": "獲得{0}。{1}",
+            "korean": "{0}를 획득합니다.{1}",
+            "japanese": "{0}を得る。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@DivineAltarTruePact"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@TruePactEnhancerReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "ValuePact",
+          "texts": {
+            "english": "Place a spell on the fiery altar."
+          },
+          "preview_obtain_texts": {
+            "english": "Get {0}.{1}",
+            "french": "Obtenez {0}.{1}",
+            "german": "Belohnung: {0}.{1}",
+            "russian": "Получите: «{0}».{1}",
+            "portuguese": "Receba {0}.{1}",
+            "chinese": "获得{0}。{1}",
+            "spanish": "Obtienes {0}.{1}",
+            "chinese_traditional": "獲得{0}。{1}",
+            "korean": "{0}를 획득합니다.{1}",
+            "japanese": "{0}を得る。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@DivineAltarValuePact"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@ValuePactEnhancerReward"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "UnitSynthesisReward",
+      "type": "custom_class",
+      "is_story_reward": true,
+      "custom_class": {
+        "id": "@UnitSynthesisRewardData",
+        "mod_reference": "EssenceData"
+      },
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 50 ]
+    },
+    {
+      "id": "PurgePactEnhancerReward",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@DivineAltarPurgePact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "SeekPactEnhancerReward",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@DivineAltarSeekPact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ThricePactEnhancerReward",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@DivineAltarThricePact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TruePactEnhancerReward",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@DivineAltarTruePact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ValuePactEnhancerReward",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@DivineAltarValuePact"
+          }
+        }
+      ]
+    }
+  ]
+}

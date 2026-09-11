@@ -1,0 +1,77 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "DivineAltarValuePact",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "english": "Value Pact"
+      },
+      "icon": "@Valuestone",
+      "descriptions": {
+        "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember] kostet.</nobr>",
+        "russian": "Снижает цену чар на <nobr>[effect0.upgrade.costreduction][ember].</nobr>",
+        "portuguese": "Melhora um feitiço para custar <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]。</nobr>",
+        "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>。",
+        "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember] 됩니다.</nobr>",
+        "japanese": "呪文アップグレード：コスト<nobr>-[effect0.upgrade.costreduction][ember]</nobr>"
+      },
+      "relic_effects": [
+        "@SpellUpgradeReduceCostAddConsume.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeReduceCostAddConsume.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@ReduceCostAddConsume"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ReduceCostAddConsume",
+      "titles": {
+        "english": "Value Pact"
+      },
+      "descriptions": {
+        "english": "-[costreduction][ember].",
+        "french": "-[costreduction][ember].",
+        "german": "-[costreduction][ember].",
+        "russian": "-[costreduction][ember].",
+        "portuguese": "-[costreduction][ember].",
+        "chinese": "-[costreduction][ember]。",
+        "spanish": "-[costreduction][ember].",
+        "chinese_traditional": "-[costreduction][ember]。",
+        "korean": "-[costreduction][ember].",
+        "japanese": "-[costreduction][ember]。"
+      },
+      "icon": "@Valuestone",
+      "hide_icon_on_card": false,
+      "cost_reduction": 3,
+      "x_cost_reduction": 3
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Valuestone",
+      "path": {
+        "bundle": "@AssetBundle",
+        "asset_path": "Assets/Textures/Enhancers/SmolderStone.png"
+      }
+    }
+  ]
+}

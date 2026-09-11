@@ -1,0 +1,226 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "events": [
+    {
+      "id": "SpellMerge",
+      "knot_name": "SpellMerge",
+      "num_runs_completed_to_see": 1,
+      "priority_ticket_count": 15,
+      "num_classes_needed_to_show": 1,
+      "min_distance_allowed": 3,
+      "max_distance_allowed": 8,
+      "story_data": "assets/data/SpellMerge.ink.json",
+      "is_followup_event": false,
+      "design_contributor": "MT1",
+      "prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/Event_Background_PurifyingBeacon.prefab",
+        "asset_guid": "ff9c5bd286dc487438a4e343e616bcb7"
+      },
+      "soul_savior_prefab": {
+        "asset_name": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_PurifyingBeacon.prefab",
+        "asset_guid": "ca2a20e86e402eb4cb808d848585a1d0"
+      },
+      "texts": [
+        {
+          "english": "<style=\"Body\">Some part of your subconscious wills you away from the light. It is powerful but unknown.",
+          "french": "<style=\"Body\">Votre inconscient vous dit de vous éloigner de cette lumière. Elle est puissante mais étrangère.",
+          "german": "<style=\"Body\">Etwas in deinem Unterbewusstsein zwingt dich dazu, dich vom Licht abzuwenden. Es ist mächtig, aber unbekannten Ursprungs.",
+          "russian": "<style=\"Body\">Часть вашего сознания призывает уйти от света. Он силен, но вы ничего о нем не знаете.",
+          "portuguese": "<style=\"Body\">Uma parte do seu subconsciente te afasta da luz. Ela é poderosa, porém desconhecida.",
+          "chinese": "<style=\"Body\">你的一部分潜意识驱使你远离那道光。它是很强大，但也很陌生。"
+        },
+        {
+          "english": "<style=\"Body\">A <color=\"blue\"><anim=shake>pillar of light</anim></color> spews strange fragments into the air making the way ahead dangerous. The Boneshaker grinds to a halt on its own, perhaps recognizing the odd power emanating from the pillar.",
+          "french": "<style=\"Body\">D'étranges fragments jaillissent d'un <color=\"blue\"><shake>pilier de lumière</shake></color>, représentant un danger sur la route. Le Hurleflammes s'immobilise de lui-même, percevant sans doute l'étrange pouvoir qui émane du pilier.",
+          "german": "<style=\"Body\">Eine <color=\"blue\"><shake>Säule aus Licht</shake></color> schleudert seltsame Fragmente in die Luft, die eine Weiterfahrt gefährlich machen. Der Knochenrüttler kommt von alleine zum Stehen, als könne er die seltsame Macht spüren, die von der Säule ausgeht.",
+          "russian": "<style=\"Body\"><color=\"blue\"><shake>Столп света</shake></color> выплевывает в воздух странные фрагменты, делая дальнейший путь небезопасным. «Костолом» останавливается, вероятно, распознав странную силу, что исходит от столпа.",
+          "portuguese": "<style=\"Body\">Um <color=\"blue\"><shake>pilar de luz</shake></color> despeja fragmentos estranhos no ar, tornando perigoso o caminho à frente. O Ossuário range até parar sozinho, talvez reconhecendo o estranho poder emanando do pilar.",
+          "chinese": "<style=\"Body\">一根<color=\"blue\"><shake>光柱</shake></color> 向天空喷出怪异的碎片，使前方的路危险重重。老爷车号缓缓自行停下，也许是察觉到了光柱中散发出的奇特力量。"
+        },
+        {
+          "english": "And looming beyond it all, a booming darkness unlike anything you've ever felt. A void of life and death and goodness. The Divinity.",
+          "french": "Pour couronner le tout, apparaît une noirceur que vous n'aviez jamais ressentie auparavant. Un trou noir de vie, de mort, de bonté. La divinité.",
+          "german": "Über ihnen ragt eine fürchterliche Finsternis, wie du sie noch nie gespürt hast. Eine Leere des Lebens, des Todes und des Guten. Die Gottheit.",
+          "russian": "А за всем этим — рокочущая тьма, подобной которой вы еще никогда не видели. Пустота жизни и смерти и добра. Божество.",
+          "portuguese": "E, elevando-se atrás de tudo, está uma crescente escuridão diferente de tudo que você já sentiu. Um vácuo de vida, de morte e de benevolência. A Divindade.",
+          "chinese": "还有一股不断壮大的黑暗笼罩着一切，而你从未有过这种感觉。那是一片没有生命、死亡以及善意的虚空。神祇。"
+        },
+        {
+          "english": "<style=\"Prompt\">And do you listen?</style>",
+          "french": "<style=\"Prompt\">Allez-vous vers elle ?</style>",
+          "german": "<style=\"Prompt\">Wirst du dich fügen?</style>",
+          "russian": "<style=\"Prompt\">Прислушаетесь ли вы к нему?</style>",
+          "portuguese": "<style=\"Prompt\">E você escuta?</style>",
+          "chinese": "<style=\"Prompt\">你要听从召唤吗？</style>"
+        },
+        {
+          "english": "When you pull your hand out, a remnant of the all-powerful Divinity comes with you.",
+          "french": "Lorsque vous retirez votre main, un vestige de la toute-puissante divinité vient avec.",
+          "german": "Als du deine Hand wieder herausziehst, hältst du einen Teil dieser allmächtigen Gottheit.",
+          "russian": "Когда вы отдергиваете руку, вместе с вами из портала вырывается осколок всемогущего Божества.",
+          "portuguese": "Quando você tira sua mão, um resquício da Divindade onipotente volta com você.",
+          "chinese": "你抽出手时，这位全能之神的一小部分也随你一起出来了。"
+        },
+        {
+          "english": "The air is stale, imperceptible even. No longer stinging with the outer chill, but also devoid of life entirely. You feel the urge to hold your hand to the light, unsure of what may occur, but something in the back of your mind urges caution.",
+          "french": "L'air se fait rare, même imperceptible. Le vent n'est plus mordant, tout est dénué de vie. Vous ressentez un besoin urgent de vous accrocher à la lumière, ne sachant pas ce qui pourrait arriver, mais au fond de vous, vous sentez que la prudence est de mise.",
+          "german": "Die Luft ist starr und kaum wahrnehmbar. Die Kälte ist fort, und doch gibt es nicht das geringste Lebenszeichen. Du verspürst den Drang, deine Hand ins Licht zu halten, bist dir aber nicht sicher, was daraufhin passieren wird. In deinem Hinterkopf schlagen einige Alarmglocken.",
+          "russian": "Воздух здесь затхлый, более того, он еле ощущается. Стужа исчезла, а вместе с ней и все признаки жизни. Вас обуревает желание протянуть к свету руку и будь, что будет, но что-то в глубине души призывает вас к осторожности.",
+          "portuguese": "O ar está insípido, imperceptível até. Não mais pungente com o frio exterior, mas totalmente desprovido de vida. Você se sente impelido a esticar a mão para a luz, incerto do que pode acontecer, mas algo no seu subconsciente pede cuidado.",
+          "chinese": "空气污浊，甚至可以说察觉不到。不再寒冷刺骨，但也完全没有了生机。你感觉到一股向光伸出手的冲动，又不确定会发生什么事，但脑中有一个念头劝你慎重行事。"
+        },
+        {
+          "english": "<align=\"center\">Oh, but the light does beckon.</style></align>",
+          "french": "<align=\"center\">Oh, mais la lumière m'appelle.</style></align>",
+          "german": "<align=\"center\">Oh, aber das Licht ruft förmlich nach dir.</style></align>",
+          "russian": "<align=\"center\">Но свет манит к себе.</style></align>",
+          "portuguese": "<align=\"center\">Ora, mas a luz realmente chama.</style></align>",
+          "chinese": "<align=\"center\">可那道光确实在召唤着你。</style></align>"
+        },
+        {
+          "english": "<style=\"Body\">Entranced, you reach into the unknown power and the light consumes you. Flashes of Hellborne and Humans and those of Heaven flicker past in this strange pocket realm. As if refocusing it, their lifeforce can be felt like molten brands in your head.",
+          "french": "<style=\"Body\">Fasciné, vous embrassez cette puissance inconnue et la lumière vous consume. Vous apercevez des démons, des humains et des anges passer tels des éclairs dans cet étrange mini-royaume. En revenant à vous, leur force vitale est semblable à des tisons dans votre tête.",
+          "german": "<style=\"Body\">Gebannt greifst du in die unbekannte Macht und wirst vom Licht umgeben. Einen Augenblick lang ziehen in dieser seltsamen Domäne Eingebungen von Höllenbrut, Menschen und sogar Himmelsbewohnern an dir vorbei. Ihre Lebensenergie pocht in deinem Kopf wie ein heißes Brandmal.",
+          "russian": "<style=\"Body\">В состоянии транса вы протягиваете руку к неизвестной силе, и свет обволакивает вас. Мимо вас проносятся Призраки Адских отродий, людей и обитателей Рая. Их жизненная сила будто бы ломает это странное карманное измерение, впиваясь в ваш разум раскаленными иглами.",
+          "portuguese": "<style=\"Body\">Extasiado, você alcança o poder desconhecido e a luz te consome. Imagens de Infernais, de Humanos, e daqueles do Céu cintilam nesse estranho reino de bolso. Como se, ao se reorientar, sua força vital pudesse ser sentida como estigmas derretidos em sua cabeça.",
+          "chinese": "<style=\"Body\">神态恍惚的你把手伸进了这股未知的力量，光吞没了你。在这个陌生的小国度里，地狱之子、人类和天堂的景象一闪而过。就像重新对焦一样，你感觉他们的生命力仿佛你脑中的熔融烙印。"
+        },
+        {
+          "english": "Tossing some of your own power into the pillar fragments it into smaller pieces, imbuing each one with some of the light within.</style>",
+          "french": "Le pilier décompose votre puissance en petits fragments qu'il illumine un à un.</style>",
+          "german": "Als du deine eigene Macht in die Säule gibst, wird sie in kleinere Stücke zerteilt, die von dem seltsamen Licht erfüllt werden.</style>",
+          "russian": "Вы обрушиваете на столп свою силу и раскалываете его на мелкие кусочки, в каждом из которых заключена толика света.</style>",
+          "portuguese": "Ao lançar um pouco do seu próprio poder ao pilar, você o fragmenta em pedaços menores, imbuindo cada um com a luz interior.</style>",
+          "chinese": "向柱子里投入你的一部分力量导致它化成了小碎片，并把其中的一部分光注入每一块碎片。</style>"
+        },
+        {
+          "english": "<align=\"center\">You know now, you are not alone.</align></style>",
+          "french": "<align=\"center\">Maintenant, vous savez... que vous n'êtes pas seul.</align></style>",
+          "german": "<align=\"center\">Du weißt nun, dass du nicht alleine bist.</align></style>",
+          "russian": "<align=\"center\">Вы понимаете, что вы не одни.</align></style>",
+          "portuguese": "<align=\"center\">Agora você sabe que não está só.</align></style>",
+          "chinese": "<align=\"center\">现在你意识到自己并不孤单。</align></style>"
+        }
+      ],
+      "choice_texts": [
+        {
+          "choice": "Accept",
+          "texts": {
+            "english": "I feel it calling.",
+            "french": "Je ressens l'appel.",
+            "german": "Ich spüre den Ruf.",
+            "russian": "Я чувствую зов.",
+            "portuguese": "Sinto o chamado.",
+            "chinese": "我感受到了它的呼唤。"
+          },
+          "preview_obtain_texts": {
+            "english": "Infuse {0} with the essence of 2 spells.{1}",
+            "french": "Imprègne {0} avec l'essence de 2 sorts.{1}",
+            "german": "Beseele {0} mit der Essenz von 2 Zaubern.{1}",
+            "russian": "{0}: наполните эссенцией двух чар.{1}",
+            "portuguese": "Infunda {0} com a essência de 2 feitiços.{1}",
+            "chinese": "给{0}注入 2 个法术的能量。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "card",
+              "references": [
+                "@NexusSpikeTarget"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@NexusSpikeSpellMergeReward"
+              ]
+            }
+          ]
+        },
+        {
+          "choice": "Duplicate",
+          "texts": {
+            "english": "Something's not right...",
+            "french": "Quelque chose cloche...",
+            "german": "Irgendwas stimmt nicht ...",
+            "russian": "Что-то не так...",
+            "portuguese": "Tem algo errado...",
+            "chinese": "有点不对劲……"
+          },
+          "preview_obtain_texts": {
+            "english": "Purge a Spell. Create 3 copies with {0}.{1}",
+            "french": "Purgez un sort. Créez 3 copies avec {0}.{1}",
+            "german": "Verbanne einen Zauber. Erzeuge 3 Kopien mit {0}.{1}.",
+            "russian": "Уничтожьте чары. Создайте 3 копии с «{0}».{1}",
+            "portuguese": "Expurgue um Feitiço. Crie 3 cópias com {0}.{1}",
+            "chinese": "移除一个法术。创造 3 个带有{0}的复制品。{1}"
+          },
+          "preview_infos": [
+            {
+              "preview_type": "enhancer",
+              "references": [
+                "@UnhingedPower"
+              ]
+            },
+            {
+              "preview_type": "deck_reward",
+              "references": [
+                "@UnhingedPowerEnhancerReward"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "NexusSpikeSpellMergeReward",
+      "type": "custom_class",
+      "is_story_reward": true,
+      "custom_class": "@NexusSpellMergeRewardData",
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 50 ]
+    },
+    {
+      "id": "UnhingedPowerEnhancerReward",
+      "type": "enhancer",
+      "is_story_reward": true,
+      "show_animation_in_event": true,
+      "show_cancel_override": true,
+      "collect_sfx_cue": "Collect_CardRare",
+      "costs": [ 100 ],
+      "extensions": [
+        {
+          "enhancer": {
+            "enhancer": "@UnhingedPower"
+          }
+        }
+      ]
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "BannedFromNexusSpikeStartingCard",
+      "card_type": "spell",
+      "excluded_effects_operator": "and",
+      "excluded_effects": [
+        "CardEffectChooseDiscard",
+        "CardEffectRecursion",
+        "CardEffectCraftSpike",
+        "CardEffectMix",
+        "CardEffectFreezeCard",
+        "CardEffectDuplicateCardInHand",
+        "CardEffectMergeEquipment",
+        "CardEffectAddTempCardUpgradeToDeckScreenChosenCard"
+      ],
+      "disallowed_pools": [ "@BannedFromNexusSpikePool"]
+    },
+    {
+      "id": "BannedFromNexusSpike",
+      "card_type": "spell",
+      "disallowed_pools": [ "@BannedFromNexusSpikePool" ]
+    }
+  ]
+}

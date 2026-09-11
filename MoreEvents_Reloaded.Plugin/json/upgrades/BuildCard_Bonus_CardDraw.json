@@ -1,0 +1,41 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_CardDraw",
+      "card_trigger_upgrades": [
+        "@BuildCard_CardDraw.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_CardDraw.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "should_test": false,
+      "param_int": 1
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_CardDraw.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Draw +[effect0.power] next turn.",
+        "french": "Piochez +[effect0.power] au prochain tour.",
+        "german": "Ziehe im nächsten Zug +[effect0.power].",
+        "russian": "Возьмите +[effect0.power] на следующий ход.",
+        "portuguese": "Compra +[effect0.power] no próximo turno.",
+        "chinese": "下个回合抽 +[effect0.power] 张牌。",
+        "spanish": "Roba +[effect0.power] en el próximo turno.",
+        "chinese_traditional": "下回合額外抽[effect0.power]張牌。",
+        "korean": "다음 턴에 카드를 추가로 +[effect0.power]장 뽑습니다.",
+        "japanese": "次のターン、ドロー+[effect0.power]。"
+      },
+      "effects": [
+        "@BuildCard_CardDraw.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "upgrades": [
+    {
+      "id": "BuildCard_Buff",
+      "card_trigger_upgrades": [
+        "@BuildCard_Buff.cardTriggerUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
+    },
+    {
+      "id": "Plus10Attack",
+      "bonus_damage": 10
+    }
+  ],
+  "effects": [
+    {
+      "id": "BuildCard_Buff.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_upgrade": "@Plus10Attack"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BuildCard_Buff.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-19872989e8c7f7b9-40461d6f225a1094d8f360dbd194652c-v2",
+        "english": "Apply +[effect0.upgrade.bonusdamage][attack].",
+        "french": "Confère +[effect0.upgrade.bonusdamage][attack].",
+        "german": "Wende +[effect0.upgrade.bonusdamage][attack] an.",
+        "russian": "Дает +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Concede +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "施加+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "+[effect0.upgrade.bonusdamage][attack]을 적용합니다.",
+        "japanese": "+[effect0.upgrade.bonusdamage][attack]を付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@BuildCard_Buff.cardTriggerUpgrades0.cardEffects0"
+      ]
+    }
+  ]
+}
