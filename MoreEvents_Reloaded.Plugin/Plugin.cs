@@ -1,15 +1,12 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-using Conductor.Data.Registers;
 using MoreEvents_Reloaded.Plugin.code;
 using MoreEvents_Reloaded.Plugin.code.rewards;
 using TrainworksReloaded.Base;
-using TrainworksReloaded.Base.CardUpgrade;
 using TrainworksReloaded.Base.Extensions;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 using TrainworksReloaded.Core.Interfaces;
-using UnityEngine;
 
 namespace MoreEvents_Reloaded.Plugin
 {
@@ -45,6 +42,7 @@ namespace MoreEvents_Reloaded.Plugin
                         "json/enhancers/Truepact.json",
                         "json/enhancers/Valuepact.json",
                         "json/enhancers/UnhingedPower.json",
+                        "json/essences/SpikedriverColony.json",
                         "json/upgrades/BuildCard_Bonus_AddCapacity.json",
                         "json/upgrades/BuildCard_Bonus_CardDraw.json",
                         "json/upgrades/BuildCard_Bonus_GainGold.json",

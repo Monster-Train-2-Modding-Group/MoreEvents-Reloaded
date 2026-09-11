@@ -36,6 +36,6 @@ def convert_csv_to_json(csv_file_path: str, json_file_path: str):
 if __name__ == "__main__":
     # Update these paths to match your filenames
     input_csv = "translations.csv"
-    output_json = "translations.json"
+    output_json = "out.json"
     
     convert_csv_to_json(input_csv, output_json)

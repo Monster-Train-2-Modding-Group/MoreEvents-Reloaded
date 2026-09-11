@@ -1,0 +1,37 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "essences": [
+    {
+      "character": "@SpikedriverColonyCharacter",
+      "upgrade": "@MonsterReplicatingExtinguishSynthesis"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MonsterReplicatingExtinguishSynthesis",
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-cdefcc5c76fa6ddb-2a3488af6fa852f48ac285e686f0ffba-v2",
+        "english": "+[bonusdamage][attack], +[bonushp][health], [multistrike] [status0.power]., and  [endless].",
+        "french": "+[bonusdamage][attack], +[bonushp][health], [multistrike] [status0.power] et [endless].",
+        "german": "+[bonusdamage][attack], +[bonushp][health], [multistrike] [status0.power] und [endless].",
+        "russian": "+[bonusdamage][attack], +[bonushp][health], [multistrike] [status0.power] и [endless].",
+        "portuguese": "+[bonusdamage] de [attack], +[bonushp] de [health], [multistrike] [status0.power] e [endless].",
+        "chinese": "+[bonusdamage][attack]，+[bonushp][health]，[multistrike] [status0.power]，[endless]。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        },
+        {
+          "status": "endless",
+          "count": 1
+        }
+      ],
+      "hide_icon_on_card": true,
+      "show_description_on_cards": false,
+      "bonus_damage": 15,
+      "bonus_hp": 5
+    }
+  ]
+}

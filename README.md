@@ -16,7 +16,13 @@ MT2 Mod that adds the cavern events from MT1.
 
 ## Events available
 
+MT1 Events
   * UnitQuest - Heph Automatic Railspikes / Spikedriver Colony
+  * BuildACard - Olde Magic
+  * SpellMerge - Nexus Spike 
+
+New Original Events
+  * Divine Altar - This events allows you the option to fuse one unit into another, like Divine Temples did in MT1. It costs nothing, but the event is slightly rarer than others. The event also features buffed Divine Temple upgrades.
 
 ## Installation
 
@@ -34,4 +40,4 @@ Do not play daily challenges with this mod enabled.
 
 ## Final
 
-Assets are purely from Monster Train 1 developed by Shiny Shoe. Improved Machine icon recolor from Monster Train 2.
+Assets are purely from Monster Train 1/2 developed by Shiny Shoe. Improved Machine icon recolor from Monster Train 2. Any other assets are simple recolors.

@@ -62,7 +62,7 @@
       "effects": [ "@NexusSpike2Null" ],
       "traits": [ "@CardTraitMergedCard" ],
       "card_art": "@CardArt_Spell_DivineFragments",
-      "linked_mastery_card": "@NexusSpike"
+      "linked_mastery_card": "@NexusSpikeTarget"
     },
     {
       "id": "NexusSpikeXTarget",
@@ -94,7 +94,7 @@
       "effects": [ "@NexusSpikeNull" ],
       "traits": [ "@CardTraitMergedCard" ],
       "card_art": "@CardArt_Spell_DivineFragments",
-      "linked_mastery_card": "@NexusSpike"
+      "linked_mastery_card": "@NexusSpikeTarget"
     },
     {
       "id": "NexusSpikeXTargetless",
@@ -126,7 +126,7 @@
       "effects": [ "@NexusSpike2Null" ],
       "traits": [ "@CardTraitMergedCard" ],
       "card_art": "@CardArt_Spell_DivineFragments",
-      "linked_mastery_card": "@NexusSpike"
+      "linked_mastery_card": "@NexusSpikeTarget"
     }
   ],
   "traits": [
@@ -145,7 +145,7 @@
     {
       "id": "PlayReserveNegativeMergeCardsUpgrade",
       "card_trigger_upgrades": [
-        "@PlayReserveNevativeMergeCards"
+        "@PlayReserveNegativeMergeCards"
       ]
     }
   ],
