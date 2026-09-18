@@ -1,3 +1,6 @@
+## V0.3.1
+- No-op just fixing the repo link on thunderstore and updated dependency to fix a bug.
+
 ## V0.3.0
 - Added SpellMerge (priority 15): Nexus Spike / Unhinged Power (This is a reimplemented version the card hopefully with less quirks.)
 - Added BuildACard  (priority 25): Olde Magic (Features new options for primary effect / status effects / movement the first 3 selections of effects).
